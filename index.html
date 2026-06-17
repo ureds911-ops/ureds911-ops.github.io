@@ -119,9 +119,11 @@
     }
     h1 .name { background: var(--grad); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
     .hero-sub {
-      font-size: clamp(1.1rem, 2.2vw, 1.35rem);
-      color: var(--text-sub); margin-bottom: 2rem; line-height: 1.8;
-      white-space: nowrap;
+      font-size: clamp(1.05rem, 2vw, 1.3rem);
+      color: var(--text-sub); margin-bottom: 2rem; line-height: 1.9;
+    }
+    .hero-sub span {
+      display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
     }
     /* #6: hero-tags を1行に収める */
     .hero-tags {
@@ -664,8 +666,8 @@
     </div>
     <h1><span class="name">tashida</span></h1>
     <p class="hero-sub">
-      技術専門知識 × AI で、他では得られないアウトプットをご提供します。<br>
-      水力発電 / ISO9001 / 技術翻訳 × AI活用の組み合わせが強みです。
+      <span>技術専門知識 × AI で、他では得られないアウトプットをご提供します。</span>
+      <span>水力発電 / ISO9001 / 技術翻訳 × AI活用の組み合わせが強みです。</span>
     </p>
     <!-- #6: 4タグで1行に収める -->
     <div class="hero-tags">
