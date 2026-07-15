@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>tashida | AIを活用できるベテラン技術コンサルタント</title>
-  <meta name="description" content="水力発電・ISO9001・技術翻訳の専門家がAIを活用。フリーランス受注16年、技術専門知識×AIで他では得られないアウトプットをご提供。" />
+  <title>tashida | Professional PowerPoint Templates — AI × Engineering × Business</title>
+  <meta name="description" content="Professional PowerPoint templates for AI lectures, technical presentations, and business use — created by a veteran technical consultant with expertise in hydropower, ISO 9001, and technical translation." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
@@ -28,7 +28,7 @@
     html { scroll-behavior: smooth; font-size: 18px; }
 
     body {
-      font-family: 'Noto Sans JP', 'Inter', sans-serif;
+      font-family: 'Inter', 'Noto Sans JP', sans-serif;
       background: var(--bg-deep);
       color: var(--text-main);
       line-height: 1.75;
@@ -56,7 +56,7 @@
       background: var(--grad); -webkit-background-clip: text; -webkit-text-fill-color: transparent;
       letter-spacing: .04em; white-space: nowrap;
     }
-    .nav-links { display: flex; gap: 1.6rem; list-style: none; flex-wrap: nowrap; }  /* #6: 1行固定 */
+    .nav-links { display: flex; gap: 1.6rem; list-style: none; flex-wrap: nowrap; }
     .nav-links a {
       color: var(--text-sub); text-decoration: none; font-size: .88rem;
       white-space: nowrap; transition: color .2s;
@@ -136,7 +136,6 @@
     .hero-sub span {
       display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
     }
-    /* #6: hero-tags を1行に収める */
     .hero-tags {
       display: flex; flex-wrap: nowrap; gap: .55rem; margin-bottom: 2.5rem;
       overflow-x: auto; padding-bottom: 2px;
@@ -164,7 +163,6 @@
     }
     .btn-outline:hover { border-color: var(--accent); color: var(--accent); transform: translateY(-2px); }
 
-    /* #1: 選ばれる２つの理由カード */
     .hero-reasons { margin-top: 1rem; }
     .reasons-title {
       font-size: .8rem; font-weight: 600; color: var(--accent);
@@ -247,7 +245,7 @@
       background: linear-gradient(135deg, #08101e 0%, #0f1e35 50%, #08101e 100%);
     }
 
-    /* Gallery (lightbox対応) */
+    /* Gallery (lightbox) */
     .project-gallery { background: #060d1a; cursor: zoom-in; height: 230px; }
     .gallery-img {
       position: absolute; inset: 0; width: 100%; height: 100%;
@@ -318,7 +316,6 @@
     }
     .projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.5rem; }
 
-    /* #3: AIコンサルタント比較カード */
     .compare-box {
       margin-top: 1rem; border-radius: .6rem; overflow: hidden;
       border: 1px solid var(--border);
@@ -344,7 +341,6 @@
       margin-top: .4rem; font-family: 'Courier New', monospace; line-height: 1.5;
     }
 
-    /* #7: 翻訳実績テーブル */
     .translation-record {
       margin-top: 1rem;
     }
@@ -381,10 +377,9 @@
     }
     .trans-pdf-link:hover { border-color: var(--accent); color: var(--accent2); }
 
-    /* ── シリーズショーケース ── */
+    /* ── SERIES SHOWCASE ── */
     .series-showcase {
       margin-top: 3rem;
-      /* セクションの横パディングを打ち消してビューポート幅まで拡張 */
       margin-left:  calc(-1 * clamp(1.5rem, 8vw, 8rem));
       margin-right: calc(-1 * clamp(1.5rem, 8vw, 8rem));
       background: var(--bg-card);
@@ -410,7 +405,6 @@
     .series-panel { display: none; }
     .series-panel.active { display: block; }
 
-    /* #5/#8: 5レイアウトグリッド + 日本語名 + lightbox */
     .layout-grid {
       display: grid; grid-template-columns: repeat(5, 1fr); gap: 0.5rem;
       padding: 0.8rem clamp(1.5rem, 8vw, 8rem) 0.6rem;
@@ -432,7 +426,6 @@
       font-size: .66rem; color: var(--text-sub); text-align: center;
       padding: .2rem .3rem 0; line-height: 1.5; opacity: .8;
     }
-    /* #5: ツールチップ（hover説明） */
     .layout-tooltip {
       position: absolute; bottom: calc(100% + 6px); left: 50%; transform: translateX(-50%);
       background: var(--bg-deep); border: 1px solid var(--accent);
@@ -556,7 +549,7 @@
     .tool-cat { font-size: .72rem; color: var(--accent2); font-weight: 600; letter-spacing: .1em; margin-bottom: .35rem; }
     .tool-list { font-size: 1rem; color: var(--text-sub); line-height: 1.55; }
 
-    /* ── WHY TASHIDA (#1: 選ばれる２つの理由 詳細) ── */
+    /* ── WHY CHOOSE ME ── */
     #merit { background: var(--bg-deep); }
     .merit-reasons { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 2rem; }
     .merit-reason-card {
@@ -673,17 +666,17 @@
 <nav>
   <span class="nav-logo">tashida</span>
   <ul class="nav-links">
-    <li><a href="#hero">ホーム</a></li>
-    <li><a href="#templates">テンプレート</a></li>
-    <li><a href="#merit">選ばれる理由</a></li>
-    <li><a href="#services">サービス</a></li>
-    <li><a href="#translation">技術翻訳</a></li>
-    <li><a href="#about">プロフィール</a></li>
-    <li><a href="#contact">お問い合わせ</a></li>
+    <li><a href="#hero">Home</a></li>
+    <li><a href="#templates">Templates</a></li>
+    <li><a href="#merit">Why Choose Me</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#translation">Technical Translation</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#contact">Contact</a></li>
   </ul>
   <div class="lang-switch">
-    <a href="index.html" class="active">🇯🇵 日本語</a>
-    <a href="en/index.html">🇺🇸 English</a>
+    <a href="../index.html">🇯🇵 日本語</a>
+    <a href="index.html" class="active">🇺🇸 English</a>
   </div>
 </nav>
 
@@ -695,26 +688,26 @@
     <div class="hero-flex">
       <div>
         <div class="hero-badge">
-          <span></span>Gumroad で販売中
+          <span></span>Available on Gumroad
         </div>
-        <h1>PowerPoint<br><span class="name">テンプレート</span></h1>
+        <h1>PowerPoint<br><span class="name">Templates</span></h1>
         <p class="hero-sub">
-          <span>AI × 技術 × ビジネス</span>
-          <span>長年の実務経験から生まれたテンプレート</span>
+          <span>AI × Technology × Business</span>
+          <span>Built from years of hands-on engineering experience</span>
         </p>
         <div class="hero-tags">
-          <span class="tag">全15枚編集可能</span>
-          <span class="tag">3種類のデザイン</span>
-          <span class="tag">スライドマスター付</span>
-          <span class="tag">すぐ使える</span>
+          <span class="tag">All 15 Slides Editable</span>
+          <span class="tag">3 Design Themes</span>
+          <span class="tag">Slide Master Included</span>
+          <span class="tag">Ready to Use</span>
         </div>
         <div class="hero-cta">
-          <a href="https://tashida.gumroad.com/l/zrvyyn" class="btn btn-primary" target="_blank" rel="noopener">Gumroadで購入</a>
-          <a href="#templates" class="btn btn-outline">プレビューを見る</a>
+          <a href="https://tashida.gumroad.com/l/zrvyyn" class="btn btn-primary" target="_blank" rel="noopener">Buy on Gumroad</a>
+          <a href="#templates" class="btn btn-outline">View Live Preview</a>
         </div>
       </div>
       <div class="hero-visual">
-        <img src="images/hero_cover.png" alt="PowerPointテンプレート" />
+        <img src="../images/hero_cover.png" alt="PowerPoint Templates" />
       </div>
     </div>
   </div>
@@ -723,31 +716,31 @@
 <!-- ────────────────── WHY CHOOSE THESE TEMPLATES ────────────────── -->
 <section id="why-templates">
   <div class="fade-in">
-    <p class="section-label">テンプレートが選ばれる理由</p>
-    <h2>プロフェッショナル向けに設計</h2>
+    <p class="section-label">Why Choose These Templates</p>
+    <h2>Designed for Professionals</h2>
     <div class="section-divider"></div>
   </div>
   <div class="fade-in" style="display:flex; flex-wrap:wrap; gap:.6rem; margin-bottom:2.5rem;">
-    <span class="tag">AI講義</span>
-    <span class="tag">技術プレゼンテーション</span>
-    <span class="tag">ビジネス会議</span>
-    <span class="tag">研修・トレーニング</span>
+    <span class="tag">AI Lectures</span>
+    <span class="tag">Technical Presentations</span>
+    <span class="tag">Business Meetings</span>
+    <span class="tag">Training Courses</span>
   </div>
   <div class="services-grid">
     <div class="service-card fade-in">
       <div class="service-icon">🎨</div>
-      <h3>自由に編集可能</h3>
-      <p>スライドマスターを標準搭載し、一貫性のある簡単なカスタマイズが可能。標準フォントArialを使用しているため、文字化けの心配もありません。</p>
+      <h3>Fully Editable</h3>
+      <p>Comes with a built-in Slide Master for consistent, easy customization. Built with the standard Arial font, so there are no missing-font issues.</p>
     </div>
     <div class="service-card fade-in">
       <div class="service-icon">📦</div>
-      <h3>すぐに使える</h3>
-      <p>プラグイン不要、サブスクリプション不要。お使いのPowerPointでファイルを開くだけで、すぐにプレゼンを始められます。</p>
+      <h3>Ready to Use</h3>
+      <p>No plugins, no subscriptions. Just open the file in the PowerPoint you already have and start presenting.</p>
     </div>
     <div class="service-card fade-in">
       <div class="service-icon">⚡</div>
-      <h3>シンプルな操作手順</h3>
-      <p>開く → 編集する → 発表する。ダウンロードからプロフェッショナルなプレゼンまで、3つのシンプルなステップです。</p>
+      <h3>Simple Workflow</h3>
+      <p>Open → Edit → Present. Three simple steps from download to a professional presentation.</p>
     </div>
   </div>
 </section>
@@ -756,63 +749,62 @@
 <section id="templates">
   <div class="fade-in">
     <p class="section-label">Templates</p>
-    <h2>ライブプレビュー — 3シリーズ × 5レイアウト</h2>
+    <h2>Live Preview — 3 Series × 5 Layouts</h2>
     <div class="section-divider"></div>
   </div>
   <div class="projects-grid">
 
-    <!-- Project 1: PPT Template（#2: GLightbox実装） -->
+    <!-- Project 1: PPT Template -->
     <div class="project-card fade-in">
       <div class="project-visual project-gallery" id="gallery1">
-        <!-- lightbox用アンカーをアクティブ画像に被せる -->
-        <a href="images/styles_comparison.png"
+        <a href="../images/styles_comparison.png"
            class="glightbox gallery-lb-link"
            id="gallery1-lb"
            data-gallery="ppt-gallery"
-           data-title="3スタイル比較 — Light Minimal / Dark Corporate / Tech Blue"
-           data-description="AI生成背景テンプレート。3シリーズ × 5レイアウトを収録。"
-           aria-label="クリックで拡大"></a>
-        <img class="gallery-img active" src="images/styles_comparison.png" alt="3スタイル比較" data-src="images/styles_comparison.png" data-title="3スタイル比較" />
-        <img class="gallery-img" src="images/all_15_slides.png" alt="全15スライドレイアウト一覧" data-src="images/all_15_slides.png" data-title="全15スライドレイアウト一覧" />
-        <img class="gallery-img" src="images/usage_scene.png" alt="使用シーン" data-src="images/usage_scene.png" data-title="AI講義・企業研修向け使用シーン" />
-        <button class="gallery-btn gallery-prev" onclick="galleryNav('gallery1',-1)" aria-label="前の画像">&#8249;</button>
-        <button class="gallery-btn gallery-next" onclick="galleryNav('gallery1', 1)" aria-label="次の画像">&#8250;</button>
+           data-title="3-Style Comparison — Light Minimal / Dark Corporate / Tech Blue"
+           data-description="AI-generated background templates. Includes 3 series × 5 layouts."
+           aria-label="Click to enlarge"></a>
+        <img class="gallery-img active" src="../images/styles_comparison.png" alt="3-Style Comparison" data-src="../images/styles_comparison.png" data-title="3-Style Comparison" />
+        <img class="gallery-img" src="../images/all_15_slides.png" alt="All 15 Slide Layouts" data-src="../images/all_15_slides.png" data-title="All 15 Slide Layouts" />
+        <img class="gallery-img" src="../images/usage_scene.png" alt="Usage Scene" data-src="../images/usage_scene.png" data-title="AI Lecture & Corporate Training Usage Scene" />
+        <button class="gallery-btn gallery-prev" onclick="galleryNav('gallery1',-1)" aria-label="Previous image">&#8249;</button>
+        <button class="gallery-btn gallery-next" onclick="galleryNav('gallery1', 1)" aria-label="Next image">&#8250;</button>
         <div class="gallery-dots">
           <button class="gallery-dot active" onclick="galleryGoto('gallery1',0)"></button>
           <button class="gallery-dot" onclick="galleryGoto('gallery1',1)"></button>
           <button class="gallery-dot" onclick="galleryGoto('gallery1',2)"></button>
         </div>
-        <div class="gallery-caption" id="gallery1-caption">3スタイル比較</div>
-        <div class="gallery-hint">クリックで拡大</div>
+        <div class="gallery-caption" id="gallery1-caption">3-Style Comparison</div>
+        <div class="gallery-hint">Click to enlarge</div>
         <span class="badge-new">NEW</span>
       </div>
       <div class="project-body">
         <div class="project-tags">
           <span class="ptag">PowerPoint</span>
-          <span class="ptag">AI画像生成</span>
-          <span class="ptag">Gumroad出品中</span>
+          <span class="ptag">AI Image Generation</span>
+          <span class="ptag">Available on Gumroad</span>
         </div>
-        <h3>AI生成背景テンプレート × PowerPointスライドマスター</h3>
-        <p>AI画像生成ツール Gemini（Nano Banana）で制作した背景をPowerPointのスライドマスターに組み込んだ、AI講義・企業研修・教育機関向けテンプレート。</p>
+        <h3>AI-Generated Background Templates × PowerPoint Slide Master</h3>
+        <p>Backgrounds generated with the AI image tool Gemini (Nano Banana), built into PowerPoint slide masters — designed for AI lectures, corporate training, and educational institutions.</p>
         <div class="project-features">
-          <div class="feature-row">3テーマ：Light-Minimal / Dark-Corporate / Tech-Blue</div>
-          <div class="feature-row">各テーマ5レイアウト（Cover・Section・Normal・Diagram・Highlight）</div>
-          <div class="feature-row">スライドマスターで一括管理、再利用性・カスタマイズ性が高い設計</div>
-          <div class="feature-row">PPTXファイル ＋ PNGプレビュー同梱、即利用可能</div>
+          <div class="feature-row">3 themes: Light-Minimal / Dark-Corporate / Tech-Blue</div>
+          <div class="feature-row">5 layouts per theme (Cover, Section, Normal, Diagram, Highlight)</div>
+          <div class="feature-row">Centrally managed via Slide Master for high reusability and easy customization</div>
+          <div class="feature-row">Includes PPTX file + PNG previews — ready to use immediately</div>
         </div>
-        <a href="https://tashida.gumroad.com/l/zrvyyn" class="btn btn-primary" target="_blank" rel="noopener" style="margin-top:1.2rem; display:inline-block;">Gumroadで購入</a>
+        <a href="https://tashida.gumroad.com/l/zrvyyn" class="btn btn-primary" target="_blank" rel="noopener" style="margin-top:1.2rem; display:inline-block;">Buy on Gumroad</a>
       </div>
     </div>
 
   </div>
 
-  <!-- #5/#8: シリーズショーケース（修正済み画像 + lightbox + レイアウト説明） -->
+  <!-- Series showcase -->
   <div class="series-showcase fade-in">
     <div class="series-showcase-header">
-      <p class="series-showcase-title">3シリーズ × 5レイアウト プレビュー</p>
+      <p class="series-showcase-title">3 Series × 5 Layouts Preview</p>
       <p class="series-showcase-sub">
-        各スライドをクリックすると拡大表示できます。
-        Cover（表紙）/ Section（区切り）/ Normal（本文）/ Diagram（図解）/ Highlight（強調）
+        Click any slide to view it enlarged.
+        Cover / Section / Normal / Diagram / Highlight
       </p>
     </div>
     <div class="series-tabs">
@@ -825,58 +817,53 @@
     <div id="series-dark" class="series-panel active">
       <div class="layout-grid">
         <div class="layout-cell">
-          <div class="layout-tooltip">プレゼンの表紙。タイトル・日付・発表者名を記載</div>
+          <div class="layout-tooltip">Presentation cover slide with title, date, and presenter name</div>
           <a href="#" class="layout-thumb-link" onclick="openSeriesLb('dark',0,event)">
-            <img src="images/slides/DC_Cover.png" class="layout-thumb" alt="DC Cover" loading="lazy" />
+            <img src="../images/slides/DC_Cover.png" class="layout-thumb" alt="DC Cover" loading="lazy" />
           </a>
           <div class="layout-label">
             <span class="layout-name-en">Cover</span>
-            <span class="layout-name-jp">（表紙）</span>
           </div>
         </div>
         <div class="layout-cell">
-          <div class="layout-tooltip">章・セクションの区切りページ</div>
+          <div class="layout-tooltip">Section divider page for chapters and topics</div>
           <a href="#" class="layout-thumb-link" onclick="openSeriesLb('dark',1,event)">
-            <img src="images/slides/DC_Section.png" class="layout-thumb" alt="DC Section" loading="lazy" />
+            <img src="../images/slides/DC_Section.png" class="layout-thumb" alt="DC Section" loading="lazy" />
           </a>
           <div class="layout-label">
             <span class="layout-name-en">Section</span>
-            <span class="layout-name-jp">（区切り）</span>
           </div>
         </div>
         <div class="layout-cell">
-          <div class="layout-tooltip">標準コンテンツページ。テキスト・箇条書き最適</div>
+          <div class="layout-tooltip">Standard content page, ideal for text and bullet points</div>
           <a href="#" class="layout-thumb-link" onclick="openSeriesLb('dark',2,event)">
-            <img src="images/slides/DC_Normal.png" class="layout-thumb" alt="DC Normal" loading="lazy" />
+            <img src="../images/slides/DC_Normal.png" class="layout-thumb" alt="DC Normal" loading="lazy" />
           </a>
           <div class="layout-label">
             <span class="layout-name-en">Normal</span>
-            <span class="layout-name-jp">（本文）</span>
           </div>
         </div>
         <div class="layout-cell">
-          <div class="layout-tooltip">図・チャート・フロー図の表示用</div>
+          <div class="layout-tooltip">For charts, diagrams, and flowcharts</div>
           <a href="#" class="layout-thumb-link" onclick="openSeriesLb('dark',3,event)">
-            <img src="images/slides/DC_Diagram.png" class="layout-thumb" alt="DC Diagram" loading="lazy" />
+            <img src="../images/slides/DC_Diagram.png" class="layout-thumb" alt="DC Diagram" loading="lazy" />
           </a>
           <div class="layout-label">
             <span class="layout-name-en">Diagram</span>
-            <span class="layout-name-jp">（図解）</span>
           </div>
         </div>
         <div class="layout-cell">
-          <div class="layout-tooltip">重要ポイント・まとめ・強調スライド</div>
+          <div class="layout-tooltip">For key points, summaries, and highlights</div>
           <a href="#" class="layout-thumb-link" onclick="openSeriesLb('dark',4,event)">
-            <img src="images/slides/DC_Highlight.png" class="layout-thumb" alt="DC Highlight" loading="lazy" />
+            <img src="../images/slides/DC_Highlight.png" class="layout-thumb" alt="DC Highlight" loading="lazy" />
           </a>
           <div class="layout-label">
             <span class="layout-name-en">Highlight</span>
-            <span class="layout-name-jp">（強調）</span>
           </div>
         </div>
       </div>
       <div style="padding: 0 clamp(1.5rem, 8vw, 8rem) 1rem;">
-        <a href="https://tashida.gumroad.com/l/zrvyyn" class="btn btn-outline" target="_blank" rel="noopener">今すぐ購入 — Dark Corporate</a>
+        <a href="https://tashida.gumroad.com/l/zrvyyn" class="btn btn-outline" target="_blank" rel="noopener">Buy Now — Dark Corporate</a>
       </div>
     </div>
 
@@ -884,58 +871,53 @@
     <div id="series-tech" class="series-panel">
       <div class="layout-grid">
         <div class="layout-cell">
-          <div class="layout-tooltip">プレゼンの表紙。タイトル・日付・発表者名を記載</div>
+          <div class="layout-tooltip">Presentation cover slide with title, date, and presenter name</div>
           <a href="#" class="layout-thumb-link" onclick="openSeriesLb('tech',0,event)">
-            <img src="images/slides/TB_Cover.png" class="layout-thumb" alt="TB Cover" loading="lazy" />
+            <img src="../images/slides/TB_Cover.png" class="layout-thumb" alt="TB Cover" loading="lazy" />
           </a>
           <div class="layout-label">
             <span class="layout-name-en">Cover</span>
-            <span class="layout-name-jp">（表紙）</span>
           </div>
         </div>
         <div class="layout-cell">
-          <div class="layout-tooltip">章・セクションの区切りページ</div>
+          <div class="layout-tooltip">Section divider page for chapters and topics</div>
           <a href="#" class="layout-thumb-link" onclick="openSeriesLb('tech',1,event)">
-            <img src="images/slides/TB_Section.png" class="layout-thumb" alt="TB Section" loading="lazy" />
+            <img src="../images/slides/TB_Section.png" class="layout-thumb" alt="TB Section" loading="lazy" />
           </a>
           <div class="layout-label">
             <span class="layout-name-en">Section</span>
-            <span class="layout-name-jp">（区切り）</span>
           </div>
         </div>
         <div class="layout-cell">
-          <div class="layout-tooltip">標準コンテンツページ。テキスト・箇条書き最適</div>
+          <div class="layout-tooltip">Standard content page, ideal for text and bullet points</div>
           <a href="#" class="layout-thumb-link" onclick="openSeriesLb('tech',2,event)">
-            <img src="images/slides/TB_Normal.png" class="layout-thumb" alt="TB Normal" loading="lazy" />
+            <img src="../images/slides/TB_Normal.png" class="layout-thumb" alt="TB Normal" loading="lazy" />
           </a>
           <div class="layout-label">
             <span class="layout-name-en">Normal</span>
-            <span class="layout-name-jp">（本文）</span>
           </div>
         </div>
         <div class="layout-cell">
-          <div class="layout-tooltip">図・チャート・フロー図の表示用</div>
+          <div class="layout-tooltip">For charts, diagrams, and flowcharts</div>
           <a href="#" class="layout-thumb-link" onclick="openSeriesLb('tech',3,event)">
-            <img src="images/slides/TB_Diagram.png" class="layout-thumb" alt="TB Diagram" loading="lazy" />
+            <img src="../images/slides/TB_Diagram.png" class="layout-thumb" alt="TB Diagram" loading="lazy" />
           </a>
           <div class="layout-label">
             <span class="layout-name-en">Diagram</span>
-            <span class="layout-name-jp">（図解）</span>
           </div>
         </div>
         <div class="layout-cell">
-          <div class="layout-tooltip">重要ポイント・まとめ・強調スライド</div>
+          <div class="layout-tooltip">For key points, summaries, and highlights</div>
           <a href="#" class="layout-thumb-link" onclick="openSeriesLb('tech',4,event)">
-            <img src="images/slides/TB_Highlight.png" class="layout-thumb" alt="TB Highlight" loading="lazy" />
+            <img src="../images/slides/TB_Highlight.png" class="layout-thumb" alt="TB Highlight" loading="lazy" />
           </a>
           <div class="layout-label">
             <span class="layout-name-en">Highlight</span>
-            <span class="layout-name-jp">（強調）</span>
           </div>
         </div>
       </div>
       <div style="padding: 0 clamp(1.5rem, 8vw, 8rem) 1rem;">
-        <a href="https://tashida.gumroad.com/l/zrvyyn" class="btn btn-outline" target="_blank" rel="noopener">今すぐ購入 — Tech Blue</a>
+        <a href="https://tashida.gumroad.com/l/zrvyyn" class="btn btn-outline" target="_blank" rel="noopener">Buy Now — Tech Blue</a>
       </div>
     </div>
 
@@ -943,64 +925,59 @@
     <div id="series-light" class="series-panel">
       <div class="layout-grid">
         <div class="layout-cell">
-          <div class="layout-tooltip">プレゼンの表紙。タイトル・日付・発表者名を記載</div>
+          <div class="layout-tooltip">Presentation cover slide with title, date, and presenter name</div>
           <a href="#" class="layout-thumb-link" onclick="openSeriesLb('light',0,event)">
-            <img src="images/slides/LM_Cover.png" class="layout-thumb" alt="LM Cover" loading="lazy" />
+            <img src="../images/slides/LM_Cover.png" class="layout-thumb" alt="LM Cover" loading="lazy" />
           </a>
           <div class="layout-label">
             <span class="layout-name-en">Cover</span>
-            <span class="layout-name-jp">（表紙）</span>
           </div>
         </div>
         <div class="layout-cell">
-          <div class="layout-tooltip">章・セクションの区切りページ</div>
+          <div class="layout-tooltip">Section divider page for chapters and topics</div>
           <a href="#" class="layout-thumb-link" onclick="openSeriesLb('light',1,event)">
-            <img src="images/slides/LM_Section.png" class="layout-thumb" alt="LM Section" loading="lazy" />
+            <img src="../images/slides/LM_Section.png" class="layout-thumb" alt="LM Section" loading="lazy" />
           </a>
           <div class="layout-label">
             <span class="layout-name-en">Section</span>
-            <span class="layout-name-jp">（区切り）</span>
           </div>
         </div>
         <div class="layout-cell">
-          <div class="layout-tooltip">標準コンテンツページ。テキスト・箇条書き最適</div>
+          <div class="layout-tooltip">Standard content page, ideal for text and bullet points</div>
           <a href="#" class="layout-thumb-link" onclick="openSeriesLb('light',2,event)">
-            <img src="images/slides/LM_Normal.png" class="layout-thumb" alt="LM Normal" loading="lazy" />
+            <img src="../images/slides/LM_Normal.png" class="layout-thumb" alt="LM Normal" loading="lazy" />
           </a>
           <div class="layout-label">
             <span class="layout-name-en">Normal</span>
-            <span class="layout-name-jp">（本文）</span>
           </div>
         </div>
         <div class="layout-cell">
-          <div class="layout-tooltip">図・チャート・フロー図の表示用</div>
+          <div class="layout-tooltip">For charts, diagrams, and flowcharts</div>
           <a href="#" class="layout-thumb-link" onclick="openSeriesLb('light',3,event)">
-            <img src="images/slides/LM_Diagram.png" class="layout-thumb" alt="LM Diagram" loading="lazy" />
+            <img src="../images/slides/LM_Diagram.png" class="layout-thumb" alt="LM Diagram" loading="lazy" />
           </a>
           <div class="layout-label">
             <span class="layout-name-en">Diagram</span>
-            <span class="layout-name-jp">（図解）</span>
           </div>
         </div>
         <div class="layout-cell">
-          <div class="layout-tooltip">重要ポイント・まとめ・強調スライド</div>
+          <div class="layout-tooltip">For key points, summaries, and highlights</div>
           <a href="#" class="layout-thumb-link" onclick="openSeriesLb('light',4,event)">
-            <img src="images/slides/LM_Highlight.png" class="layout-thumb" alt="LM Highlight" loading="lazy" />
+            <img src="../images/slides/LM_Highlight.png" class="layout-thumb" alt="LM Highlight" loading="lazy" />
           </a>
           <div class="layout-label">
             <span class="layout-name-en">Highlight</span>
-            <span class="layout-name-jp">（強調）</span>
           </div>
         </div>
       </div>
       <div style="padding: 0 clamp(1.5rem, 8vw, 8rem) 1rem;">
-        <a href="https://tashida.gumroad.com/l/zrvyyn" class="btn btn-outline" target="_blank" rel="noopener">今すぐ購入 — Light Minimal</a>
+        <a href="https://tashida.gumroad.com/l/zrvyyn" class="btn btn-outline" target="_blank" rel="noopener">Buy Now — Light Minimal</a>
       </div>
     </div>
 
     <div class="series-label-row">
-      <span>AI-Slide-Templates（3シリーズ × 5レイアウト）</span>
-      <a href="https://tashida.gumroad.com/l/zrvyyn" class="btn btn-primary" target="_blank" rel="noopener" style="padding:.4rem 1.1rem; font-size:.82rem;">Gumroadで購入</a>
+      <span>AI Slide Templates (3 Series × 5 Layouts)</span>
+      <a href="https://tashida.gumroad.com/l/zrvyyn" class="btn btn-primary" target="_blank" rel="noopener" style="padding:.4rem 1.1rem; font-size:.82rem;">Buy on Gumroad</a>
     </div>
   </div>
 </section>
@@ -1008,62 +985,62 @@
 <!-- ────────────────── WHAT'S INCLUDED ────────────────── -->
 <section id="whats-included">
   <div class="fade-in">
-    <p class="section-label">セット内容</p>
-    <h2>すべて含まれています</h2>
+    <p class="section-label">What's Included</p>
+    <h2>Everything You Need</h2>
     <div class="section-divider"></div>
   </div>
   <div class="fade-in icon-check-grid">
-    <div class="merit-sub-item"><div class="merit-sub-icon">✓</div><p>スライド15枚</p></div>
-    <div class="merit-sub-item"><div class="merit-sub-icon">✓</div><p>テーマ3種</p></div>
-    <div class="merit-sub-item"><div class="merit-sub-icon">✓</div><p>PPTXファイル</p></div>
-    <div class="merit-sub-item"><div class="merit-sub-icon">✓</div><p>PNGプレビュー</p></div>
-    <div class="merit-sub-item"><div class="merit-sub-icon">✓</div><p>ドキュメント</p></div>
-    <div class="merit-sub-item"><div class="merit-sub-icon">✓</div><p>問い合わせ用PDF</p></div>
-    <div class="merit-sub-item"><div class="merit-sub-icon">✓</div><p>無料フォント</p></div>
+    <div class="merit-sub-item"><div class="merit-sub-icon">✓</div><p>15 Slides</p></div>
+    <div class="merit-sub-item"><div class="merit-sub-icon">✓</div><p>3 Themes</p></div>
+    <div class="merit-sub-item"><div class="merit-sub-icon">✓</div><p>PPTX File</p></div>
+    <div class="merit-sub-item"><div class="merit-sub-icon">✓</div><p>PNG Preview</p></div>
+    <div class="merit-sub-item"><div class="merit-sub-icon">✓</div><p>Documentation</p></div>
+    <div class="merit-sub-item"><div class="merit-sub-icon">✓</div><p>Contact PDF</p></div>
+    <div class="merit-sub-item"><div class="merit-sub-icon">✓</div><p>Free Fonts</p></div>
   </div>
   <div class="fade-in" style="margin-top:2.5rem; text-align:center;">
-    <a href="https://tashida.gumroad.com/l/zrvyyn" class="btn btn-primary" target="_blank" rel="noopener">Gumroadで入手</a>
+    <a href="https://tashida.gumroad.com/l/zrvyyn" class="btn btn-primary" target="_blank" rel="noopener">Get it on Gumroad</a>
   </div>
 </section>
 
-<!-- ────────────────── WHY TASHIDA（#1: 選ばれる２つの理由 詳細） ────────────────── -->
+<!-- ────────────────── WHY CHOOSE ME ────────────────── -->
 <section id="merit">
   <div class="fade-in">
-    <p class="section-label">Why tashida</p>
-    <h2>ご依頼いただくメリット<br>── 選ばれる２つの理由</h2>
+    <p class="section-label">Why Choose Me</p>
+    <h2>Why Clients Choose Me<br>— Two Key Reasons</h2>
     <div class="section-divider"></div>
   </div>
   <div class="merit-reasons">
     <div class="merit-reason-card fade-in">
       <div class="merit-reason-num">01</div>
-      <h3>現在もAIスキルを活用して<br>業務サポート継続中</h3>
+      <h3>Actively Applying AI Skills<br>in Ongoing Client Work</h3>
       <div class="merit-sub-list">
         <div class="merit-sub-item">
           <div class="merit-sub-icon">✓</div>
-          <p>業務サポート継続中のクライアント様社内で、<strong>AIスキルを活用したホームページ見直し</strong>を推進中。</p>
+          <p>Currently leading an <strong>AI-driven website overhaul</strong> for a long-term consulting client.</p>
         </div>
         <div class="merit-sub-item">
           <div class="merit-sub-icon">✓</div>
-          <p>同クライアント様の<strong>研修資料作成・ISO9001 内部監査／外部審査対応</strong>にもAIを積極的に活用。</p>
+          <p>Also applying AI extensively to <strong>training material development and ISO 9001 internal/external audit support</strong> for the same client.</p>
         </div>
         <div class="merit-sub-item">
           <div class="merit-sub-icon">✓</div>
-          <p>「AIを使えます」だけでなく、<strong>専門知識をAIで実務成果物に変換できる</strong>希少なコンサルタントです。</p>
+          <p>Not just "someone who can use AI" — a rare consultant who can <strong>turn domain expertise into practical deliverables with AI</strong>.</p>
         </div>
       </div>
     </div>
     <div class="merit-reason-card fade-in">
       <div class="merit-reason-num">02</div>
-      <h3>フリーランスとして<br>クライアントワーク受注16年の実績</h3>
+      <h3>16 Years of Freelance<br>Client Work Experience</h3>
       <div class="merit-sub-list">
         <div class="merit-sub-item">
           <div class="merit-sub-icon">①</div>
-          <p>水力発電機 固定子・回転子の組立・据付・試験に関する技術文書の英日翻訳を多数受注。2023〜2026年の4年間で<strong>110件 / 約194,000語</strong>。
-          <br><a href="files/translation-summary.pdf" target="_blank" rel="noopener">→ 翻訳実績サマリー（PDF）</a></p>
+          <p>Extensive experience translating technical documentation for hydropower generator stator/rotor assembly, installation, and testing — <strong>110 projects / approx. 194,000 words</strong> over the 4 years from 2023–2026.
+          <br><a href="../files/translation-summary-en.pdf" target="_blank" rel="noopener">→ View Translation Portfolio Summary (PDF)</a></p>
         </div>
         <div class="merit-sub-item">
           <div class="merit-sub-icon">②</div>
-          <p>クライアント様に対する <strong>ISO9001:2015</strong> に基づく品質マネジメントシステム導入コンサルティングおよび<strong>11年間</strong>にわたる同システムの継続運用実績あり。</p>
+          <p>Provided <strong>ISO 9001:2015</strong>-based quality management system implementation consulting for clients, with <strong>11 years</strong> of continuous operational support.</p>
         </div>
       </div>
     </div>
@@ -1074,7 +1051,7 @@
 <section id="skills">
   <div class="fade-in">
     <p class="section-label">Skills &amp; Tools</p>
-    <h2>スキル・使用ツール</h2>
+    <h2>Skills &amp; Tools</h2>
     <div class="section-divider"></div>
   </div>
   <div class="skills-layout">
@@ -1083,23 +1060,23 @@
         <h3>CORE SKILLS</h3>
         <div class="skill-list">
           <div class="skill-item">
-            <span class="skill-name">AI 画像生成・コンテンツ制作</span>
+            <span class="skill-name">AI Image Generation &amp; Content Creation</span>
             <div class="skill-bar-wrap"><div class="skill-bar" style="width:85%"></div></div>
           </div>
           <div class="skill-item">
-            <span class="skill-name">AI活用 技術文書作成</span>
+            <span class="skill-name">AI-Assisted Technical Writing</span>
             <div class="skill-bar-wrap"><div class="skill-bar" style="width:90%"></div></div>
           </div>
           <div class="skill-item">
-            <span class="skill-name">PowerPoint スライドマスター設計</span>
+            <span class="skill-name">PowerPoint Slide Master Design</span>
             <div class="skill-bar-wrap"><div class="skill-bar" style="width:88%"></div></div>
           </div>
           <div class="skill-item">
-            <span class="skill-name">水力発電 技術翻訳（英日・日英）</span>
+            <span class="skill-name">Hydropower Technical Translation (EN↔JA)</span>
             <div class="skill-bar-wrap"><div class="skill-bar" style="width:95%"></div></div>
           </div>
           <div class="skill-item">
-            <span class="skill-name">ISO9001:2015 QMS 運用支援</span>
+            <span class="skill-name">ISO 9001:2015 QMS Operational Support</span>
             <div class="skill-bar-wrap"><div class="skill-bar" style="width:93%"></div></div>
           </div>
         </div>
@@ -1119,15 +1096,15 @@
           </div>
           <div class="tool-card">
             <div class="tool-cat">AI IMAGE</div>
-            <div class="tool-list">Gemini（Nano Banana）<br>ChatGPT（GPT Image）</div>
+            <div class="tool-list">Gemini (Nano Banana)<br>ChatGPT (GPT Image)</div>
           </div>
           <div class="tool-card">
             <div class="tool-cat">DOCUMENT</div>
-            <div class="tool-list">PowerPoint<br>スライドマスター設計<br>Excel / Word</div>
+            <div class="tool-list">PowerPoint<br>Slide Master Design<br>Excel / Word</div>
           </div>
           <div class="tool-card" style="grid-column: 1 / -1;">
             <div class="tool-cat">SALES PLATFORM</div>
-            <div class="tool-list">Gumroad（デジタル作品出品：https://tashida.gumroad.com）</div>
+            <div class="tool-list">Gumroad (Digital product sales: https://tashida.gumroad.com)</div>
           </div>
         </div>
       </div>
@@ -1135,12 +1112,12 @@
   </div>
 </section>
 
-<!-- ────────────────── GUMROAD CTA（中段） ────────────────── -->
+<!-- ────────────────── GUMROAD CTA (mid-page) ────────────────── -->
 <section id="gumroad-cta" style="text-align:center;">
   <div class="fade-in" style="max-width:600px; margin:0 auto;">
-    <h2 style="margin-bottom:1rem;">PowerPoint テンプレートをお探しですか？</h2>
-    <p style="color:var(--text-sub); margin-bottom:2rem;">AI講義・企業研修・技術プレゼン向けに設計された、すぐに使えるプロフェッショナルテンプレート。</p>
-    <a href="https://tashida.gumroad.com/l/zrvyyn" class="btn btn-primary" target="_blank" rel="noopener">Gumroadで購入</a>
+    <h2 style="margin-bottom:1rem;">Looking for PowerPoint Templates?</h2>
+    <p style="color:var(--text-sub); margin-bottom:2rem;">Ready-to-use professional templates designed for AI lectures, corporate training, and technical presentations.</p>
+    <a href="https://tashida.gumroad.com/l/zrvyyn" class="btn btn-primary" target="_blank" rel="noopener">Buy on Gumroad</a>
   </div>
 </section>
 
@@ -1148,60 +1125,56 @@
 <section id="services">
   <div class="fade-in">
     <p class="section-label">Services</p>
-    <h2>対応可能な業務</h2>
+    <h2>What I Offer</h2>
     <div class="section-divider"></div>
   </div>
   <div class="services-grid">
-    <!-- PowerPointテンプレート販売（NEW: 最優先） -->
     <div class="service-card fade-in">
       <div class="service-icon">🛒</div>
-      <h3>PowerPoint テンプレート販売</h3>
-      <p>AI講義・企業研修・教育機関向けPowerPointテンプレートをGumroadにて販売中。3テーマ×5レイアウト、即利用可能です。</p>
-      <a href="https://tashida.gumroad.com/l/zrvyyn" class="btn btn-outline" target="_blank" rel="noopener" style="margin-top:1rem; display:inline-block; padding:.5rem 1.2rem; font-size:.85rem;">Gumroadで見る</a>
+      <h3>PowerPoint Template Sales</h3>
+      <p>Professional PowerPoint templates for AI lectures, corporate training, and educational institutions — available now on Gumroad. 3 themes × 5 layouts, ready to use immediately.</p>
+      <a href="https://tashida.gumroad.com/l/zrvyyn" class="btn btn-outline" target="_blank" rel="noopener" style="margin-top:1rem; display:inline-block; padding:.5rem 1.2rem; font-size:.85rem;">View on Gumroad</a>
     </div>
-    <!-- 専門技術 -->
     <div class="service-card fade-in">
       <div class="service-icon">🌐</div>
-      <h3>日英・英日 技術翻訳</h3>
-      <p>水力発電設備（固定子・回転子・タービン・発電機）の技術文書を中心に、電気・通信・IT 分野の翻訳に対応。AI活用による効率化と専門用語の正確性を両立します。</p>
+      <h3>Japanese↔English Technical Translation</h3>
+      <p>Specializing in technical documentation for hydropower equipment (stators, rotors, turbines, generators), with additional experience in electrical, telecom, and IT translation. AI-assisted for efficiency without compromising terminological accuracy.</p>
     </div>
     <div class="service-card fade-in">
       <div class="service-icon">📋</div>
-      <h3>ISO9001 品質マネジメント支援</h3>
-      <p>ISO9001:2015に基づくQMS導入コンサルティング・内部監査支援・外部審査対応。11年間の継続運用サポート実績をもとにAIを活用した効率的な運用を支援します。</p>
+      <h3>ISO 9001 Quality Management Support</h3>
+      <p>ISO 9001:2015-based QMS implementation consulting, internal audit support, and external audit preparation — backed by 11 years of continuous operational experience, with AI-assisted efficiency.</p>
     </div>
-    <!-- AI活用の業務 -->
     <div class="service-card fade-in service-card--image">
       <div class="service-icon">🖼️</div>
-      <h3>AI 画像生成</h3>
-      <p>ChatGPT（GPT Image）・Gemini（Nano Banana）を活用した高品質なAI画像生成。背景・アイキャッチ・テンプレート素材に対応。</p>
+      <h3>AI Image Generation</h3>
+      <p>High-quality AI image generation using ChatGPT (GPT Image) and Gemini (Nano Banana) — for backgrounds, eye-catching visuals, and template assets.</p>
     </div>
     <div class="service-card fade-in">
       <div class="service-icon">📊</div>
-      <h3>PowerPoint テンプレート設計</h3>
-      <p>スライドマスターを活用した背景・テンプレート設計。AI講義・企業研修・教育機関向けに最適化した再利用性の高い資料を制作します。</p>
+      <h3>PowerPoint Template Design (Custom)</h3>
+      <p>Custom background and template design built on Slide Master architecture — optimized for AI lectures, corporate training, and educational institutions, with high reusability.</p>
     </div>
     <div class="service-card fade-in">
       <div class="service-icon">🎓</div>
       <div class="service-new">NEW</div>
-      <h3>研修・講義向けテンプレート制作</h3>
-      <p>AI講義・企業研修向けPowerPointテンプレートの制作・販売。専門用途に最適化した設計です（Gumroad出品中）。</p>
+      <h3>Training &amp; Lecture Template Design</h3>
+      <p>Design and sale of PowerPoint templates for AI lectures and corporate training — purpose-built for specialized use cases (available on Gumroad).</p>
     </div>
     <div class="service-card fade-in">
       <div class="service-icon">🔍</div>
-      <h3>リサーチ・要約業務</h3>
-      <p>目的に合わせた情報収集・整理・要約。技術分野の専門的なリサーチにも対応します。</p>
+      <h3>Research &amp; Summarization</h3>
+      <p>Information gathering, organization, and summarization tailored to your needs — including specialized technical research.</p>
     </div>
     <div class="service-card fade-in">
       <div class="service-icon">🔧</div>
-      <h3>AI活用 技術コンサルティング</h3>
-      <p>水力発電・ISO9001・海外プロジェクトの専門知識をベースにAIを活用。リスクアセスメント・NCR処理・据付手順書等の高品質な技術文書を作成します。</p>
+      <h3>AI-Assisted Technical Consulting</h3>
+      <p>Applying deep domain expertise in hydropower, ISO 9001, and international projects through AI — producing high-quality technical documentation including risk assessments, NCR handling, and installation procedures.</p>
     </div>
-    <!-- Technical Writing（最後） -->
     <div class="service-card fade-in">
       <div class="service-icon">✍️</div>
-      <h3>AI活用 文章作成・コンテンツ制作</h3>
-      <p>記事・研修資料・マニュアル・説明文書など、専門知識を活かした高品質なテキストコンテンツを制作します。一般的なAI利用との質的な差別化が可能です。</p>
+      <h3>AI-Assisted Writing &amp; Content Creation</h3>
+      <p>Producing high-quality text content — articles, training materials, manuals, and documentation — leveraging specialized expertise. A meaningful step above generic AI-generated content.</p>
     </div>
   </div>
 </section>
@@ -1210,7 +1183,7 @@
 <section id="translation">
   <div class="fade-in">
     <p class="section-label">Translation Portfolio</p>
-    <h2>翻訳実績</h2>
+    <h2>Technical Translation Track Record</h2>
     <div class="section-divider"></div>
   </div>
   <div class="project-card fade-in" style="max-width:900px;">
@@ -1218,60 +1191,60 @@
       <div style="text-align:center; padding:1rem;">
         <div style="font-size:.75rem; color:#8aa4c8; letter-spacing:.1em; margin-bottom:.6rem;">TECHNICAL TRANSLATION</div>
         <div style="display:flex; align-items:center; gap:.75rem; font-size:1.1rem; font-weight:600; justify-content:center;">
-          <span>日本語</span>
+          <span>Japanese</span>
           <span style="color:#3b9eff; font-size:1.4rem;">⇄</span>
           <span>English</span>
         </div>
         <div style="display:flex; gap:1.5rem; justify-content:center; margin-top:.9rem;">
           <div style="text-align:center;">
-            <div style="font-size:1.8rem; font-weight:700; background:var(--grad); -webkit-background-clip:text; -webkit-text-fill-color:transparent;">110件</div>
-            <div style="font-size:.7rem; color:#8aa4c8;">2023〜2026</div>
+            <div style="font-size:1.8rem; font-weight:700; background:var(--grad); -webkit-background-clip:text; -webkit-text-fill-color:transparent;">110</div>
+            <div style="font-size:.7rem; color:#8aa4c8;">Projects, 2023–2026</div>
           </div>
           <div style="text-align:center;">
-            <div style="font-size:1.8rem; font-weight:700; background:var(--grad); -webkit-background-clip:text; -webkit-text-fill-color:transparent;">194,000語</div>
-            <div style="font-size:.7rem; color:#8aa4c8;">総翻訳語数</div>
+            <div style="font-size:1.8rem; font-weight:700; background:var(--grad); -webkit-background-clip:text; -webkit-text-fill-color:transparent;">194,000</div>
+            <div style="font-size:.7rem; color:#8aa4c8;">Total Words Translated</div>
           </div>
         </div>
       </div>
     </div>
     <div class="project-body">
       <div class="project-tags">
-        <span class="ptag">英日・日英翻訳</span>
-        <span class="ptag">水力発電</span>
-        <span class="ptag">技術文書</span>
-        <span class="ptag">AI活用</span>
+        <span class="ptag">EN↔JA Translation</span>
+        <span class="ptag">Hydropower</span>
+        <span class="ptag">Technical Documentation</span>
+        <span class="ptag">AI-Assisted</span>
       </div>
-      <h3>日英・英日技術翻訳（水力発電設備専門）</h3>
-      <p>水力発電機 固定子・回転子の組立・据付・試験に関する技術文書の英日翻訳を中心に、2023〜2026年の4年間で110件 / 約194,000語を受注。</p>
+      <h3>Japanese↔English Technical Translation (Hydropower Equipment Specialist)</h3>
+      <p>Specializing in technical documentation for the assembly, installation, and testing of hydropower generator stators and rotors — 110 projects / approximately 194,000 words over the 4 years from 2023 to 2026.</p>
       <div class="translation-record">
         <div class="trans-stats">
-          <span class="trans-stat">合計 <strong>110件</strong></span>
-          <span class="trans-stat">英日 <strong>98件</strong></span>
-          <span class="trans-stat">日英 <strong>12件</strong></span>
-          <span class="trans-stat">総語数 <strong>約194,000語</strong></span>
-          <span class="trans-stat">対象 <strong>5発電所</strong></span>
+          <span class="trans-stat">Total <strong>110 projects</strong></span>
+          <span class="trans-stat">EN→JA <strong>98</strong></span>
+          <span class="trans-stat">JA→EN <strong>12</strong></span>
+          <span class="trans-stat">Total Words <strong>~194,000</strong></span>
+          <span class="trans-stat">Power Plants <strong>5</strong></span>
         </div>
         <div class="trans-table-wrap">
           <table class="trans-table">
             <thead>
               <tr>
-                <th>年度</th><th>発電所</th><th>種別</th><th>件数</th><th>語数</th><th>主な文書</th>
+                <th>Year</th><th>Plant</th><th>Type</th><th>Count</th><th>Words</th><th>Key Documents</th>
               </tr>
             </thead>
             <tbody>
-              <tr><td>2023</td><td>N発電所</td><td class="ej">英日</td><td>33</td><td>34,672</td><td>強度計算書、ITP、油圧パワーユニット設計メモ</td></tr>
-              <tr><td>2023</td><td>O発電所</td><td class="je">日英</td><td>9</td><td>41,993</td><td>水車据付仕様書、固定子据付・試験要領書</td></tr>
-              <tr><td>2023</td><td>S発電所</td><td class="ej">英日</td><td>3</td><td>9,494</td><td>ランナー計算書、タービンシャフト強度計算書</td></tr>
-              <tr><td>2024</td><td>I発電所</td><td class="ej">英日</td><td>8</td><td>11,320</td><td>発電機基礎荷重特性報告書、ITP発電機パッケージ</td></tr>
-              <tr><td>2024</td><td>N・S・T発電所</td><td class="ej">英日</td><td>9</td><td>17,369</td><td>立軸発電機据付プロトコル、試験手順書</td></tr>
-              <tr><td>2025</td><td>I・T発電所</td><td class="ej">英日</td><td>8</td><td>10,891</td><td>カプランランナー計算書、翼FEA報告書</td></tr>
-              <tr><td>2026</td><td>N発電所</td><td class="je">日英</td><td>2</td><td>15,167</td><td>現地試験要領書（発電機有水無水試験）</td></tr>
-              <tr><td>2026</td><td>N・S発電所</td><td class="ej">英日</td><td>28</td><td>35,349</td><td>As-Built図面、発電機試験・コミッショニング文書</td></tr>
+              <tr><td>2023</td><td>Plant N</td><td class="ej">EN→JA</td><td>33</td><td>34,672</td><td>Strength calculation report, ITP, hydraulic power unit design memo</td></tr>
+              <tr><td>2023</td><td>Plant O</td><td class="je">JA→EN</td><td>9</td><td>41,993</td><td>Turbine installation specification, stator installation &amp; test procedure</td></tr>
+              <tr><td>2023</td><td>Plant S</td><td class="ej">EN→JA</td><td>3</td><td>9,494</td><td>Runner calculation report, turbine shaft strength calculation</td></tr>
+              <tr><td>2024</td><td>Plant I</td><td class="ej">EN→JA</td><td>8</td><td>11,320</td><td>Generator foundation load characteristics report, ITP generator package</td></tr>
+              <tr><td>2024</td><td>Plants N/S/T</td><td class="ej">EN→JA</td><td>9</td><td>17,369</td><td>Vertical generator installation protocol, test procedure</td></tr>
+              <tr><td>2025</td><td>Plants I/T</td><td class="ej">EN→JA</td><td>8</td><td>10,891</td><td>Kaplan runner calculation report, blade FEA report</td></tr>
+              <tr><td>2026</td><td>Plant N</td><td class="je">JA→EN</td><td>2</td><td>15,167</td><td>Site test procedure (generator wet/dry test)</td></tr>
+              <tr><td>2026</td><td>Plants N/S</td><td class="ej">EN→JA</td><td>28</td><td>35,349</td><td>As-built drawings, generator test &amp; commissioning documents</td></tr>
             </tbody>
           </table>
         </div>
-        <a href="files/translation-summary.pdf" class="trans-pdf-link" target="_blank" rel="noopener">
-          📄 翻訳実績サマリー（PDF）を見る
+        <a href="../files/translation-summary-en.pdf" class="trans-pdf-link" target="_blank" rel="noopener">
+          📄 View Translation Portfolio Summary (PDF)
         </a>
       </div>
     </div>
@@ -1283,30 +1256,30 @@
   <div class="about-grid">
     <div class="about-text fade-in">
       <p class="section-label">About</p>
-      <h2>はじめまして。<br>tashida と申します。</h2>
+      <h2>Hello,<br>I'm tashida.</h2>
       <div class="section-divider"></div>
-      <p>電気・通信・水力発電分野の品質保証・技術サポート、および日英技術翻訳に16年従事。<strong style="color:var(--accent2)">「AIに専門知識を与えて高品質な成果物に変換できる」</strong>ことが最大の強みです。</p>
+      <p>16 years of experience in quality assurance and technical support across electrical, telecom, and hydropower fields, plus Japanese↔English technical translation. My core strength is <strong style="color:var(--accent2)">turning specialized domain knowledge into high-quality deliverables through AI</strong>.</p>
     </div>
     <div class="about-highlights fade-in">
       <div class="highlight-card">
-        <div class="number">16年</div>
-        <p>フリーランス実績</p>
+        <div class="number">16 Yrs</div>
+        <p>Freelance Experience</p>
       </div>
       <div class="highlight-card">
-        <div class="number">110件</div>
-        <p>翻訳実績</p>
+        <div class="number">110</div>
+        <p>Translation Projects</p>
       </div>
       <div class="highlight-card">
-        <div class="number">ISO9001</div>
-        <p>QMSコンサル</p>
+        <div class="number">ISO 9001</div>
+        <p>QMS Consulting</p>
       </div>
       <div class="highlight-card">
-        <div class="number">水力発電</div>
-        <p>専門分野</p>
+        <div class="number">Hydropower</div>
+        <p>Specialization</p>
       </div>
       <div class="highlight-card">
         <div class="number">AI</div>
-        <p>業務活用</p>
+        <p>Applied in Practice</p>
       </div>
     </div>
   </div>
@@ -1316,14 +1289,14 @@
 <section id="philosophy">
   <div class="philosophy-inner fade-in">
     <p class="section-label">Philosophy</p>
-    <h2>仕事への想い</h2>
+    <h2>My Approach to Work</h2>
     <div class="section-divider" style="margin: 0 auto 2rem;"></div>
     <blockquote>
-      AI は業務効率化の手段であると同時に、アウトプットの質を高める重要なツールです。<br><br>
-      ただし、AIが生み出す成果物の質は、使い手の専門知識と問題分解能力に左右されます。
-      35年以上の技術者経験で培った水力発電・ISO9001・海外プロジェクトの知識を
-      AIに与えることで、初めて「他では得られない」アウトプットが生まれると考えています。<br><br>
-      一つひとつのご依頼に丁寧に向き合い、長期的なパートナーとしてお付き合いできれば幸いです。
+      AI is both a tool for improving efficiency and a means of elevating the quality of output.<br><br>
+      However, the quality of what AI produces depends on the user's domain expertise and ability to break problems down.
+      Only by feeding AI the knowledge I've built over more than 35 years as an engineer — across hydropower, ISO 9001,
+      and international projects — can I create outputs you truly can't get elsewhere.<br><br>
+      I approach every request with care, and hope to build long-term partnerships with my clients.
     </blockquote>
   </div>
 </section>
@@ -1332,31 +1305,31 @@
 <section id="ai-expertise">
   <div class="fade-in">
     <p class="section-label">AI × Expertise</p>
-    <h2>「AIを使える人」と<br>「AIで専門知識を成果物に変換できる人」の違い</h2>
+    <h2>The Difference Between<br>"Someone Who Can Use AI" and "Someone Who Can Turn Expertise Into Results With AI"</h2>
     <div class="section-divider"></div>
   </div>
   <p class="ai-compare-intro fade-in">
-    現在は誰でも ChatGPT でそれなりの文章が作れます。「AI を使えます」だけでは差別化になりません。
-    水力発電設備・ISO9001・海外プロジェクト等の深い専門知識を持つ人間がAIに文脈を与えることで、
-    初めて実務レベルの成果物が生まれます。
+    Anyone can get ChatGPT to produce reasonably good text today. Simply "being able to use AI" is no longer a differentiator.
+    Only when someone with deep domain expertise — in hydropower equipment, ISO 9001, and international projects —
+    provides AI with the right context does it produce genuinely practical, professional-grade output.
   </p>
 
   <div class="project-card fade-in" style="margin-bottom:2rem;">
     <div class="project-visual theme-corp" style="height:auto; padding: 1.4rem;">
       <div style="width:100%;">
-        <div style="font-size:.72rem; color:var(--accent); font-weight:700; letter-spacing:.12em; margin-bottom:.6rem;">AI × 専門知識の差</div>
-        <div style="font-size:.9rem; font-weight:600; color:var(--text-main); margin-bottom:.8rem;">ISO9001 リスクアセスメント — プロンプト対比</div>
+        <div style="font-size:.72rem; color:var(--accent); font-weight:700; letter-spacing:.12em; margin-bottom:.6rem;">AI × DOMAIN EXPERTISE GAP</div>
+        <div style="font-size:.9rem; font-weight:600; color:var(--text-main); margin-bottom:.8rem;">ISO 9001 Risk Assessment — Prompt Comparison</div>
         <div class="compare-box">
           <div class="compare-row">
             <div class="compare-col before">
-              <div class="compare-label before-lbl">一般AI利用者</div>
-              <code>ISO9001のリスクアセスメントを作ってください</code>
-              <p>→ 人材不足→教育、情報漏洩→パスワード管理（抽象的）</p>
+              <div class="compare-label before-lbl">GENERAL AI USER</div>
+              <code>Write an ISO 9001 risk assessment</code>
+              <p>→ Staff shortage → training, data leaks → password management (abstract)</p>
             </div>
             <div class="compare-col after">
-              <div class="compare-label after-lbl">専門知識 × AI</div>
-              <code>ISO9001:2015 6.1に基づき、海外水力発電設備据付工事会社を対象。顧客は欧州企業、外国人技術者を海外現場へ派遣。外部・内部課題、KPIを含む表形式で。</code>
-              <p>→ 課題/リスク/機会/KPI を含む実務レベルの詳細表</p>
+              <div class="compare-label after-lbl">DOMAIN EXPERTISE × AI</div>
+              <code>Based on ISO 9001:2015 Clause 6.1, for an overseas hydropower installation contractor. The client is a European company dispatching foreign engineers to an overseas site. Produce a table including external/internal issues and KPIs.</code>
+              <p>→ A practical, detailed table covering issues, risks, opportunities, and KPIs</p>
             </div>
           </div>
         </div>
@@ -1364,17 +1337,17 @@
     </div>
     <div class="project-body">
       <div class="project-tags">
-        <span class="ptag">AI業務支援</span>
-        <span class="ptag">水力発電</span>
-        <span class="ptag">ISO9001</span>
+        <span class="ptag">AI Consulting</span>
+        <span class="ptag">Hydropower</span>
+        <span class="ptag">ISO 9001</span>
       </div>
-      <h3>AIを活用できるベテラン技術コンサルタント</h3>
-      <p>35年以上の技術者経験（水力発電・ISO9001・海外プロジェクト・技術翻訳）を持つ人間がAIを活用することで、一般的なAI利用者とは質的に異なる成果物を生み出します。</p>
+      <h3>A Veteran Technical Consultant Who Leverages AI</h3>
+      <p>With over 35 years of engineering experience across hydropower, ISO 9001, international projects, and technical translation, I produce results that are qualitatively different from what a typical AI user can achieve.</p>
       <div class="project-features">
-        <div class="feature-row">AI講座の「役割を与える」「箇条書き指示」レベルをはるかに超えた専門分野特化プロンプト</div>
-        <div class="feature-row">ISO9001 内部監査支援・リスクアセスメント・海外顧客向け英文メール作成</div>
-        <div class="feature-row">水力発電据付工事リスク分析・技術翻訳レビュー対応</div>
-        <div class="feature-row">「AIを使える人」ではなく「AIで専門知識を成果物に変換できる人」</div>
+        <div class="feature-row">Domain-specific prompting that goes far beyond generic AI-course techniques like "assign a role" or "give bullet-point instructions"</div>
+        <div class="feature-row">ISO 9001 internal audit support, risk assessment, and English correspondence for overseas clients</div>
+        <div class="feature-row">Hydropower installation risk analysis and technical translation review</div>
+        <div class="feature-row">Not just "someone who can use AI" — someone who can turn domain expertise into real deliverables through AI</div>
       </div>
     </div>
   </div>
@@ -1385,100 +1358,100 @@
     <div class="ai-case fade-in">
       <div class="ai-case-header">
         <div class="ai-case-num">CASE 01</div>
-        <div class="ai-case-title">ISO9001 不適合報告書（NCR）</div>
+        <div class="ai-case-title">ISO 9001 Nonconformance Report (NCR)</div>
       </div>
       <div class="ai-pair">
         <div class="ai-side general">
-          <span class="ai-side-label">一般AI出力</span>
-          <div class="ai-prompt">ISO9001の不適合報告書を書いて</div>
+          <span class="ai-side-label">GENERAL AI OUTPUT</span>
+          <div class="ai-prompt">Write an ISO 9001 nonconformance report</div>
           <div class="ai-result">
-            <span class="ai-result-tag bad">抽象的</span><br>
-            作業手順が守られていませんでした。原因を調査し再発防止に努めます。
+            <span class="ai-result-tag bad">Abstract</span><br>
+            Work procedures were not followed. We will investigate the cause and prevent recurrence.
           </div>
         </div>
         <div class="ai-side expert">
-          <span class="ai-side-label">専門知識 × AI</span>
-          <div class="ai-prompt">海外水力発電工事において、ウィケットゲートスロットル穴径が図面要求より小さかった。工程への影響を評価しNCRとして処理する。</div>
+          <span class="ai-side-label">DOMAIN EXPERTISE × AI</span>
+          <div class="ai-prompt">During an overseas hydropower project, the wicket gate throttle bore diameter was smaller than drawing requirements. Assess the schedule impact and process this as an NCR.</div>
           <div class="ai-result-en">
-            <span class="ai-result-tag good">実務レベル</span><br>
+            <span class="ai-result-tag good">Practical-grade</span><br>
             During inspection of the wicket gate assembly, it was identified that the throttle bore diameter was smaller than the value specified on drawing XXX. Engineering assessment confirmed that the deviation has no adverse effect on hydraulic performance, mechanical integrity, or operating reliability.
           </div>
         </div>
       </div>
     </div>
 
-    <!-- Case 2: 技術報告書 -->
+    <!-- Case 2: Technical report -->
     <div class="ai-case fade-in">
       <div class="ai-case-header">
         <div class="ai-case-num">CASE 02</div>
-        <div class="ai-case-title">技術報告書（水力発電・最も差別化しやすい）</div>
+        <div class="ai-case-title">Technical Report (Hydropower — Where Expertise Stands Out Most)</div>
       </div>
       <div class="ai-pair">
         <div class="ai-side general">
-          <span class="ai-side-label">一般AI出力</span>
-          <div class="ai-prompt">キャビテーションについて書いて</div>
+          <span class="ai-side-label">GENERAL AI OUTPUT</span>
+          <div class="ai-prompt">Write about cavitation</div>
           <div class="ai-result">
-            <span class="ai-result-tag bad">表面的</span><br>
-            キャビテーションが発生しました。対策が必要です。
+            <span class="ai-result-tag bad">Superficial</span><br>
+            Cavitation occurred. Countermeasures are required.
           </div>
         </div>
         <div class="ai-side expert">
-          <span class="ai-side-label">専門知識 × AI</span>
-          <div class="ai-prompt">最低下流水位におけるキャビテーション余裕を計算し、ドラフトチューブ圧力脈動への対策を検討する。</div>
+          <span class="ai-side-label">DOMAIN EXPERTISE × AI</span>
+          <div class="ai-prompt">Calculate the cavitation margin at minimum tailwater level and evaluate countermeasures for draft tube pressure pulsation.</div>
           <div class="ai-result-en">
-            <span class="ai-result-tag good">水力発電技術者レベル</span><br>
+            <span class="ai-result-tag good">Hydropower engineer level</span><br>
             The calculated cavitation margin at minimum tailwater level is approximately 4 m above the admissible limit. Nevertheless, central air admission is recommended to suppress draft tube pressure pulsations and mitigate vortex rope development.
           </div>
         </div>
       </div>
     </div>
 
-    <!-- Case 3: 工事手順書 -->
+    <!-- Case 3: Construction procedure -->
     <div class="ai-case fade-in">
       <div class="ai-case-header">
         <div class="ai-case-num">CASE 03</div>
-        <div class="ai-case-title">工事手順書（発電機据付）</div>
+        <div class="ai-case-title">Construction Procedure (Generator Installation)</div>
       </div>
       <div class="ai-pair">
         <div class="ai-side general">
-          <span class="ai-side-label">一般AI出力</span>
-          <div class="ai-prompt">発電機の据付手順を書いて</div>
+          <span class="ai-side-label">GENERAL AI OUTPUT</span>
+          <div class="ai-prompt">Write a generator installation procedure</div>
           <div class="ai-result">
-            <span class="ai-result-tag bad">簡略すぎる</span><br>
-            発電機を据付します。ボルトを締めます。
+            <span class="ai-result-tag bad">Too simplistic</span><br>
+            Install the generator. Tighten the bolts.
           </div>
         </div>
         <div class="ai-side expert">
-          <span class="ai-side-label">専門知識 × AI</span>
-          <div class="ai-prompt">立軸発電機の回転子降下手順、軸継ぎ手アライメント確認、TIR許容値を含む据付プロトコルを作成する。</div>
+          <span class="ai-side-label">DOMAIN EXPERTISE × AI</span>
+          <div class="ai-prompt">Create an installation protocol for a vertical generator, including rotor lowering sequence, coupling bolt-hole alignment verification, and TIR tolerance.</div>
           <div class="ai-result-en">
-            <span class="ai-result-tag good">専門家文章</span><br>
+            <span class="ai-result-tag good">Expert-level writing</span><br>
             Rotor shall be lowered in increments of approximately 10 mm. Alignment of coupling bolt holes shall be verified at each step. Runout shall not exceed 0.15 mm TIR at the turbine guide bearing.
           </div>
         </div>
       </div>
     </div>
 
-    <!-- Case 4: 海外顧客メール -->
+    <!-- Case 4: Overseas client email -->
     <div class="ai-case fade-in">
       <div class="ai-case-header">
         <div class="ai-case-num">CASE 04</div>
-        <div class="ai-case-title">海外顧客向け英文メール</div>
+        <div class="ai-case-title">English Email to an Overseas Client</div>
       </div>
       <div class="ai-pair">
         <div class="ai-side general">
-          <span class="ai-side-label">一般AI出力</span>
-          <div class="ai-prompt">工期が遅れることをメールで伝えて</div>
+          <span class="ai-side-label">GENERAL AI OUTPUT</span>
+          <div class="ai-prompt">Write an email telling the client the schedule will be delayed</div>
           <div class="ai-result">
-            <span class="ai-result-tag bad">プロ品質に欠ける</span><br>
+            <span class="ai-result-tag bad">Lacks professional quality</span><br>
             Dear Customer, We have some delay. Sorry for the inconvenience.
           </div>
         </div>
         <div class="ai-side expert">
-          <span class="ai-side-label">専門知識 × AI</span>
-          <div class="ai-prompt">ガイドベーン操作リングに寸法偏差が見つかり追加検査が必要。影響2営業日。欧州顧客向けに契約品質要件を踏まえた英文メールを作成。</div>
+          <span class="ai-side-label">DOMAIN EXPERTISE × AI</span>
+          <div class="ai-prompt">A dimensional deviation was found on the guide vane operating ring, requiring additional inspection. Impact: 2 business days. Write an English email to a European client reflecting contractual quality requirements.</div>
           <div class="ai-result-en">
-            <span class="ai-result-tag good">国際プロジェクト対応</span><br>
+            <span class="ai-result-tag good">International-project-ready</span><br>
             During the assembly verification process, an unexpected dimensional deviation was identified on the operating ring interface. To ensure full compliance with contractual and quality requirements, additional inspection activities have been initiated. The current schedule impact is estimated to be two working days.
           </div>
         </div>
@@ -1487,9 +1460,9 @@
 
   </div>
   <p style="margin-top:2rem; font-size:.9rem; color:var(--text-sub); max-width:720px;" class="fade-in">
-    上記の差は「プロンプト技術」ではなく<strong style="color:var(--accent2)">「業務知識の差」</strong>です。
-    35年以上の技術者経験・水力発電設備・ISO9001・海外プロジェクト・技術翻訳の組み合わせが、
-    単なる「AIライター」との違いを生み出します。
+    The difference above isn't about "prompting skill" — it's a difference in <strong style="color:var(--accent2)">domain knowledge</strong>.
+    Over 35 years of engineering experience combined with expertise in hydropower equipment, ISO 9001, international projects, and
+    technical translation is what sets this apart from a mere "AI writer."
   </p>
 </section>
 
@@ -1497,7 +1470,7 @@
 <section id="contact">
   <div class="contact-inner fade-in">
     <p class="section-label">Contact</p>
-    <h2>お気軽にご連絡ください</h2>
+    <h2>Get in Touch</h2>
     <div class="section-divider" style="margin: 0 auto 2rem;"></div>
     <div class="fade-in" style="margin-bottom:2rem; display:flex; flex-direction:column; gap:.4rem; color:var(--text-sub); font-size:.95rem;">
       <p>Need a custom template?</p>
@@ -1505,34 +1478,34 @@
       <p>Need ISO9001 support?</p>
       <p style="color:var(--text-main); font-weight:600;">Contact me.</p>
     </div>
-    <p>ご相談ベースでも構いません。<br>平日・土日ともに柔軟に対応可能で、メッセージは原則 24 時間以内にご返信いたします。</p>
+    <p>Feel free to reach out, even just to discuss your project.<br>Available flexibly on weekdays and weekends — I typically reply within 24 hours.</p>
     <form id="contact-form" class="contact-form" onsubmit="submitContactForm(event)" novalidate>
       <div class="form-group">
-        <label for="cf-name">お名前<span class="form-label-opt">（任意）</span></label>
-        <input type="text" id="cf-name" name="name" placeholder="例：山田 太郎" autocomplete="name" />
+        <label for="cf-name">Name<span class="form-label-opt">(optional)</span></label>
+        <input type="text" id="cf-name" name="name" placeholder="e.g. John Smith" autocomplete="name" />
       </div>
       <div class="form-group">
-        <label for="cf-email">メールアドレス<span class="form-label-req">*</span></label>
+        <label for="cf-email">Email<span class="form-label-req">*</span></label>
         <input type="email" id="cf-email" name="email" placeholder="example@email.com" autocomplete="email" required />
       </div>
       <div class="form-group">
-        <label for="cf-subject">件名</label>
-        <input type="text" id="cf-subject" name="subject" placeholder="例：技術翻訳についてのご相談" />
+        <label for="cf-subject">Subject</label>
+        <input type="text" id="cf-subject" name="subject" placeholder="e.g. Inquiry about technical translation" />
       </div>
       <div class="form-group">
-        <label for="cf-message">お問い合わせ内容<span class="form-label-req">*</span></label>
-        <textarea id="cf-message" name="message" rows="6" placeholder="ご依頼内容・ご相談内容をご記入ください" required></textarea>
+        <label for="cf-message">Message<span class="form-label-req">*</span></label>
+        <textarea id="cf-message" name="message" rows="6" placeholder="Please describe your request or question" required></textarea>
       </div>
-      <button type="submit" class="btn btn-primary form-submit">📨 送信する</button>
-      <p class="form-notice">送信ボタンを押すとメールアプリが開きます。そのまま送信してください。</p>
+      <button type="submit" class="btn btn-primary form-submit">📨 Send</button>
+      <p class="form-notice">Clicking Send will open your email app. Please send the message from there.</p>
     </form>
     <div id="form-success" class="form-success">
-      メールアプリが開きました。<br>そのまま送信をお願いいたします。<br>
-      <span style="font-size:.85rem; color:var(--text-sub);">返信まで原則 24 時間以内にご連絡いたします。</span>
+      Your email app has opened.<br>Please go ahead and send the message.<br>
+      <span style="font-size:.85rem; color:var(--text-sub);">I typically reply within 24 hours.</span>
     </div>
     <div class="contact-links">
-      <a href="tashida_プロフィール_updated.pdf" class="btn btn-outline" target="_blank" rel="noopener">プロフィールを見る</a>
-      <a href="files/translation-summary.pdf" class="btn btn-outline" target="_blank" rel="noopener">翻訳実績サマリー</a>
+      <a href="../tashida_プロフィール_updated.pdf" class="btn btn-outline" target="_blank" rel="noopener">View Profile (PDF)</a>
+      <a href="../files/translation-summary-en.pdf" class="btn btn-outline" target="_blank" rel="noopener">Translation Portfolio Summary</a>
     </div>
   </div>
 </section>
@@ -1541,15 +1514,15 @@
 <footer>
   <div style="display:flex; flex-direction:column; gap:.5rem;">
     <span class="footer-logo">tashida</span>
-    <p>AI業務支援 / PPT テンプレート設計 / ISO9001 コンサルティング / 水力発電 技術翻訳</p>
+    <p>AI-Assisted Consulting / PPT Template Design / ISO 9001 Consulting / Hydropower Technical Translation</p>
     <p style="font-size:.78rem; color:#4a6080;">© 2025 tashida. All rights reserved.</p>
   </div>
   <ul style="list-style:none; display:flex; flex-wrap:wrap; gap:1.2rem; font-size:.85rem;">
-    <li><a href="#hero" style="color:var(--text-sub); text-decoration:none;">ホーム</a></li>
-    <li><a href="#templates" style="color:var(--text-sub); text-decoration:none;">テンプレート</a></li>
-    <li><a href="#services" style="color:var(--text-sub); text-decoration:none;">サービス</a></li>
-    <li><a href="#translation" style="color:var(--text-sub); text-decoration:none;">技術翻訳</a></li>
-    <li><a href="#contact" style="color:var(--text-sub); text-decoration:none;">お問い合わせ</a></li>
+    <li><a href="#hero" style="color:var(--text-sub); text-decoration:none;">Home</a></li>
+    <li><a href="#templates" style="color:var(--text-sub); text-decoration:none;">Templates</a></li>
+    <li><a href="#services" style="color:var(--text-sub); text-decoration:none;">Services</a></li>
+    <li><a href="#translation" style="color:var(--text-sub); text-decoration:none;">Technical Translation</a></li>
+    <li><a href="#contact" style="color:var(--text-sub); text-decoration:none;">Contact</a></li>
   </ul>
   <div style="display:flex; gap:1rem;">
     <a href="https://tashida.gumroad.com/l/zrvyyn" target="_blank" rel="noopener" style="color:var(--text-sub); text-decoration:none; font-size:.85rem;">Gumroad</a>
@@ -1561,7 +1534,7 @@
 <!-- GLightbox JS -->
 <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
 <script>
-  // ── GLightbox 初期化（プロジェクトギャラリー用） ──
+  // ── GLightbox init (project gallery) ──
   const lightbox = GLightbox({
     selector: '.glightbox',
     touchNavigation: true,
@@ -1571,28 +1544,28 @@
     closeEffect: 'fade'
   });
 
-  // ── シリーズライトボックス（シリーズごとに完全分離） ──
+  // ── Series lightbox (fully separated per series) ──
   const seriesData = {
     dark: [
-      { href: 'images/slides/DC_Cover.png',    title: 'Dark Corporate — Cover（表紙）',   description: 'プレゼンの表紙スライド' },
-      { href: 'images/slides/DC_Section.png',  title: 'Dark Corporate — Section（区切り）',description: '章・セクションの区切りページ' },
-      { href: 'images/slides/DC_Normal.png',   title: 'Dark Corporate — Normal（本文）',   description: '標準コンテンツページ' },
-      { href: 'images/slides/DC_Diagram.png',  title: 'Dark Corporate — Diagram（図解）',  description: '図・チャート・フロー図用' },
-      { href: 'images/slides/DC_Highlight.png',title: 'Dark Corporate — Highlight（強調）',description: '重要ポイント・まとめ用' }
+      { href: '../images/slides/DC_Cover.png',    title: 'Dark Corporate — Cover',    description: 'Presentation cover slide' },
+      { href: '../images/slides/DC_Section.png',  title: 'Dark Corporate — Section',  description: 'Section divider page' },
+      { href: '../images/slides/DC_Normal.png',   title: 'Dark Corporate — Normal',   description: 'Standard content page' },
+      { href: '../images/slides/DC_Diagram.png',  title: 'Dark Corporate — Diagram',  description: 'For charts, diagrams, and flowcharts' },
+      { href: '../images/slides/DC_Highlight.png',title: 'Dark Corporate — Highlight',description: 'For key points and summaries' }
     ],
     tech: [
-      { href: 'images/slides/TB_Cover.png',    title: 'Tech Blue — Cover（表紙）',   description: 'プレゼンの表紙スライド' },
-      { href: 'images/slides/TB_Section.png',  title: 'Tech Blue — Section（区切り）',description: '章・セクションの区切りページ' },
-      { href: 'images/slides/TB_Normal.png',   title: 'Tech Blue — Normal（本文）',   description: '標準コンテンツページ' },
-      { href: 'images/slides/TB_Diagram.png',  title: 'Tech Blue — Diagram（図解）',  description: '図・チャート・フロー図用' },
-      { href: 'images/slides/TB_Highlight.png',title: 'Tech Blue — Highlight（強調）',description: '重要ポイント・まとめ用' }
+      { href: '../images/slides/TB_Cover.png',    title: 'Tech Blue — Cover',    description: 'Presentation cover slide' },
+      { href: '../images/slides/TB_Section.png',  title: 'Tech Blue — Section',  description: 'Section divider page' },
+      { href: '../images/slides/TB_Normal.png',   title: 'Tech Blue — Normal',   description: 'Standard content page' },
+      { href: '../images/slides/TB_Diagram.png',  title: 'Tech Blue — Diagram',  description: 'For charts, diagrams, and flowcharts' },
+      { href: '../images/slides/TB_Highlight.png',title: 'Tech Blue — Highlight',description: 'For key points and summaries' }
     ],
     light: [
-      { href: 'images/slides/LM_Cover.png',    title: 'Light Minimal — Cover（表紙）',   description: 'プレゼンの表紙スライド' },
-      { href: 'images/slides/LM_Section.png',  title: 'Light Minimal — Section（区切り）',description: '章・セクションの区切りページ' },
-      { href: 'images/slides/LM_Normal.png',   title: 'Light Minimal — Normal（本文）',   description: '標準コンテンツページ' },
-      { href: 'images/slides/LM_Diagram.png',  title: 'Light Minimal — Diagram（図解）',  description: '図・チャート・フロー図用' },
-      { href: 'images/slides/LM_Highlight.png',title: 'Light Minimal — Highlight（強調）',description: '重要ポイント・まとめ用' }
+      { href: '../images/slides/LM_Cover.png',    title: 'Light Minimal — Cover',    description: 'Presentation cover slide' },
+      { href: '../images/slides/LM_Section.png',  title: 'Light Minimal — Section',  description: 'Section divider page' },
+      { href: '../images/slides/LM_Normal.png',   title: 'Light Minimal — Normal',   description: 'Standard content page' },
+      { href: '../images/slides/LM_Diagram.png',  title: 'Light Minimal — Diagram',  description: 'For charts, diagrams, and flowcharts' },
+      { href: '../images/slides/LM_Highlight.png',title: 'Light Minimal — Highlight',description: 'For key points and summaries' }
     ]
   };
 
@@ -1628,16 +1601,16 @@
       setTimeout(() => ta.style.borderColor = '', 1800); return;
     }
     const to   = 'ureds911@gmail.com';
-    const subj = subject || 'ポートフォリオからのお問い合わせ';
-    const body = (name ? `お名前: ${name}\n` : '') +
-                 `メールアドレス: ${email.value}\n\n${message}`;
+    const subj = subject || 'Inquiry from Portfolio Website';
+    const body = (name ? `Name: ${name}\n` : '') +
+                 `Email: ${email.value}\n\n${message}`;
     window.location.href =
       `mailto:${to}?subject=${encodeURIComponent(subj)}&body=${encodeURIComponent(body)}`;
     form.style.display = 'none';
     document.getElementById('form-success').style.display = 'block';
   }
 
-  // ── シリーズタブ切り替え ──
+  // ── Series tab switching ──
   function switchSeries(key) {
     document.querySelectorAll('.series-tab').forEach(t => t.classList.remove('active'));
     document.querySelectorAll('.series-panel').forEach(p => p.classList.remove('active'));
@@ -1645,15 +1618,15 @@
     document.getElementById('series-' + key).classList.add('active');
   }
 
-  // ── ギャラリー（lightbox連動） ──
+  // ── Gallery (lightbox-synced) ──
   const galleryCaptions = {
-    gallery1: ['3スタイル比較 — Light Minimal / Dark Corporate / Tech Blue', '全15スライドレイアウト一覧', 'AI講義・企業研修向け使用シーン']
+    gallery1: ['3-Style Comparison — Light Minimal / Dark Corporate / Tech Blue', 'All 15 Slide Layouts', 'AI Lecture & Corporate Training Usage Scene']
   };
   const galleryLbSrcs = {
-    gallery1: ['images/styles_comparison.png', 'images/all_15_slides.png', 'images/usage_scene.png']
+    gallery1: ['../images/styles_comparison.png', '../images/all_15_slides.png', '../images/usage_scene.png']
   };
   const galleryLbTitles = {
-    gallery1: ['3スタイル比較', '全15スライドレイアウト一覧', 'AI講義・企業研修向け使用シーン']
+    gallery1: ['3-Style Comparison', 'All 15 Slide Layouts', 'AI Lecture & Corporate Training Usage Scene']
   };
 
   function galleryGoto(id, index) {
@@ -1666,7 +1639,6 @@
     dots[index].classList.add('active');
     const cap = document.getElementById(id + '-caption');
     if (cap && galleryCaptions[id]) cap.textContent = galleryCaptions[id][index];
-    // lightboxリンクのhrefを現在スライドに同期
     const lb = document.getElementById(id + '-lb');
     if (lb && galleryLbSrcs[id]) {
       lb.href = galleryLbSrcs[id][index];
