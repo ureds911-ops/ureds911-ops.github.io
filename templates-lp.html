@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="ja" data-lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Slide Templates | tashida — PowerPoint テンプレート 3シリーズ×5レイアウト</title>
+  <meta name="description" content="AI生成背景×PowerPointスライドマスターのプロフェッショナルテンプレート。3シリーズ×5レイアウト、全15スライド、すぐに使えます。 / AI-generated PowerPoint templates. 3 series × 5 layouts, 15 slides, ready to use." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg-deep:    #060d1a;
+      --bg-mid:     #0b1628;
+      --bg-card:    #0f1e35;
+      --accent:     #3b9eff;
+      --accent2:    #00d4ff;
+      --text-main:  #e8f0fe;
+      --text-sub:   #8aa4c8;
+      --border:     rgba(59,158,255,.18);
+      --grad:       linear-gradient(135deg, #3b9eff 0%, #00d4ff 100%);
+    }
+
+    html { scroll-behavior: smooth; font-size: 18px; }
+
+    body {
+      font-family: 'Noto Sans JP', 'Inter', sans-serif;
+      background: var(--bg-deep);
+      color: var(--text-main);
+      line-height: 1.75;
+      font-size: 1rem;
+    }
+
+    /* ── 日英切替 ── */
+    html:not([data-lang="en"]) .en { display: none; }
+    html[data-lang="en"] .ja { display: none; }
+
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: var(--bg-deep); }
+    ::-webkit-scrollbar-thumb { background: var(--accent); border-radius: 3px; }
+
+    /* ── NAV ── */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 clamp(1.5rem, 5vw, 4rem);
+      height: 64px;
+      background: rgba(6,13,26,.88);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav-logo {
+      font-family: 'Inter', sans-serif;
+      font-weight: 700; font-size: 1.3rem;
+      background: var(--grad); -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+      letter-spacing: .04em; white-space: nowrap; flex-shrink: 0; text-decoration: none;
+    }
+    .nav-links { display: flex; gap: 1.6rem; list-style: none; flex-wrap: nowrap; min-width: 0; overflow-x: auto; scrollbar-width: none; }
+    .nav-links::-webkit-scrollbar { display: none; }
+    .nav-links a { color: var(--text-sub); text-decoration: none; font-size: .88rem; white-space: nowrap; transition: color .2s; }
+    .nav-links a:hover { color: var(--accent2); }
+    .nav-right { display: flex; align-items: center; gap: 1rem; flex-shrink: 0; margin-left: 1.5rem; }
+    .lang-toggle {
+      display: flex; align-items: center; gap: .35rem;
+      padding: .32rem .7rem; border-radius: .4rem; border: 1px solid var(--border);
+      background: rgba(59,158,255,.08); color: var(--text-main);
+      font-size: .8rem; cursor: pointer; font-family: inherit; white-space: nowrap;
+      transition: border-color .2s;
+    }
+    .lang-toggle:hover { border-color: var(--accent); }
+    .back-link { font-size: .8rem; color: var(--text-sub); text-decoration: none; white-space: nowrap; }
+    .back-link:hover { color: var(--accent2); }
+
+    /* ── Sections ── */
+    section { padding: clamp(4rem, 8vw, 6rem) clamp(1.5rem, 8vw, 8rem); }
+    .section-label { font-family: 'Inter', sans-serif; font-size: .75rem; font-weight: 600; letter-spacing: .18em; text-transform: uppercase; color: var(--accent); margin-bottom: .75rem; }
+    h2 { font-size: clamp(1.9rem, 3.5vw, 2.6rem); font-weight: 700; margin-bottom: 1rem; line-height: 1.3; }
+    /* JA見出しは文字数が多く折り返しやすいため、画面幅に応じてより滑らかに縮小し1行を維持する */
+    html:not([data-lang="en"]) h2 { font-size: clamp(0.8rem, 4vw, 2.4rem); white-space: nowrap; word-break: keep-all; }
+    .section-divider { width: 48px; height: 3px; background: var(--grad); border-radius: 2px; margin-bottom: 3rem; }
+    .section-intro { text-align: center; max-width: 640px; margin: 0 auto 2.5rem; }
+    .section-intro .section-divider { margin-left: auto; margin-right: auto; }
+
+    /* ── HERO ── */
+    #hero { min-height: 100vh; display: flex; flex-direction: column; justify-content: center; padding-top: 64px; position: relative; overflow: hidden; }
+    .hero-bg { position: absolute; inset: 0; z-index: 0; background: radial-gradient(ellipse 80% 60% at 70% 40%, rgba(59,158,255,.07) 0%, transparent 60%), radial-gradient(ellipse 50% 50% at 20% 80%, rgba(0,212,255,.05) 0%, transparent 50%); }
+    .hero-grid { position: absolute; inset: 0; z-index: 0; background-image: linear-gradient(rgba(59,158,255,.04) 1px, transparent 1px), linear-gradient(90deg, rgba(59,158,255,.04) 1px, transparent 1px); background-size: 48px 48px; }
+    .hero-content { position: relative; z-index: 1; max-width: 1080px; margin: 0 auto; width: 100%; }
+    .hero-flex { display: grid; grid-template-columns: 1.15fr .85fr; gap: 3rem; align-items: center; }
+    .hero-visual img { width: 100%; border-radius: 1rem; border: 1px solid var(--border); box-shadow: 0 20px 60px rgba(0,0,0,.4); display: block; }
+    .hero-badge { display: inline-flex; align-items: center; gap: .5rem; padding: .35rem 1rem; border-radius: 2rem; border: 1px solid var(--border); background: rgba(59,158,255,.08); font-size: .8rem; color: var(--accent2); margin-bottom: 1.5rem; letter-spacing: .04em; white-space: nowrap; }
+    .hero-badge span { width: 7px; height: 7px; border-radius: 50%; background: var(--accent2); animation: pulse 2s infinite; }
+    @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:.4} }
+    h1 { font-size: clamp(2.6rem, 6.5vw, 4.4rem); font-weight: 700; line-height: 1.15; margin-bottom: 1rem; }
+    /* JA見出しも同様に、画面幅に応じて滑らかに縮小し1行を維持する */
+    html:not([data-lang="en"]) h1 { font-size: clamp(1.4rem, 6.2vw, 4.4rem); white-space: nowrap; }
+    h1 .name { background: var(--grad); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .hero-sub { font-size: clamp(1.02rem, 2vw, 1.25rem); color: var(--text-sub); margin-bottom: 2rem; line-height: 1.85; }
+    .hero-tags { display: flex; flex-wrap: nowrap; gap: .55rem; margin-bottom: 2.5rem; overflow-x: auto; padding-bottom: 2px; }
+    .tag { padding: .28rem .85rem; border-radius: .4rem; border: 1px solid var(--border); font-size: .82rem; color: var(--text-sub); background: rgba(255,255,255,.02); white-space: nowrap; flex-shrink: 0; }
+    .hero-cta { display: flex; flex-wrap: wrap; gap: 1rem; margin-bottom: 2.5rem; }
+    .btn { display: inline-block; padding: .78rem 1.9rem; border-radius: .5rem; font-size: .95rem; font-weight: 600; text-decoration: none; transition: all .25s; }
+    .btn-primary { background: var(--grad); color: #fff; box-shadow: 0 4px 24px rgba(59,158,255,.3); }
+    .btn-primary:hover { box-shadow: 0 6px 32px rgba(59,158,255,.5); transform: translateY(-2px); }
+    .btn-outline { border: 1px solid var(--border); color: var(--text-main); background: rgba(255,255,255,.03); }
+    .btn-outline:hover { border-color: var(--accent); color: var(--accent); transform: translateY(-2px); }
+
+    /* ── STATS ── */
+    .stats-bar { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; max-width: 640px; }
+    .stat-item { text-align: center; }
+    .stat-num { font-family: 'Inter', sans-serif; font-size: 2rem; font-weight: 700; background: var(--grad); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .stat-label { font-size: .78rem; color: var(--text-sub); margin-top: .2rem; }
+
+    /* ── WHY / SERVICES ── */
+    #why-templates, #whats-included, #use-cases { background: var(--bg-mid); }
+    #why-templates { padding-bottom: clamp(2rem, 4vw, 3rem); }
+    .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.2rem; }
+    .service-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: .75rem; padding: 1.6rem; transition: border-color .25s, transform .25s; }
+    .service-card:hover { border-color: var(--accent); transform: translateY(-3px); }
+    .service-icon { width: 44px; height: 44px; border-radius: .6rem; display: flex; align-items: center; justify-content: center; background: rgba(59,158,255,.1); margin-bottom: 1rem; font-size: 1.3rem; }
+    .service-card h3 { font-size: 1.1rem; margin-bottom: .5rem; }
+    .service-card p { font-size: 1rem; color: var(--text-sub); line-height: 1.65; }
+
+    /* ── PROJECT GALLERY (top preview) ── */
+    #templates { background: var(--bg-deep); padding-top: clamp(2rem, 4vw, 3rem); }
+    .project-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: 1rem; overflow: hidden; max-width: 760px; margin: 0 auto; }
+    .project-visual { height: 320px; position: relative; overflow: hidden; background: #060d1a; cursor: zoom-in; }
+    .gallery-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center top; opacity: 0; transition: opacity .45s ease; }
+    .gallery-img.active { opacity: 1; }
+    .gallery-lb-link { position: absolute; inset: 0; z-index: 2; display: block; }
+    .gallery-btn { position: absolute; top: 50%; transform: translateY(-50%); background: rgba(6,13,26,.65); border: 1px solid var(--border); color: var(--text-main); width: 32px; height: 32px; border-radius: 50%; cursor: pointer; font-size: 1.1rem; z-index: 4; display: flex; align-items: center; justify-content: center; transition: background .2s, border-color .2s; line-height: 1; }
+    .gallery-btn:hover { background: rgba(59,158,255,.5); border-color: var(--accent); }
+    .gallery-prev { left: 10px; }
+    .gallery-next { right: 10px; }
+    .gallery-dots { position: absolute; bottom: 12px; left: 50%; transform: translateX(-50%); display: flex; gap: 5px; z-index: 4; }
+    .gallery-dot { width: 6px; height: 6px; border-radius: 50%; background: rgba(255,255,255,.3); cursor: pointer; transition: background .2s, transform .2s; border: none; }
+    .gallery-dot.active { background: var(--accent2); transform: scale(1.3); }
+    .gallery-caption { position: absolute; bottom: 0; left: 0; right: 0; z-index: 3; background: linear-gradient(transparent, rgba(6,13,26,.85)); padding: .6rem .9rem .45rem; font-size: .78rem; color: var(--text-sub); letter-spacing: .04em; text-align: center; pointer-events: none; }
+    .gallery-hint { position: absolute; top: 12px; right: 48px; z-index: 4; background: rgba(59,158,255,.18); border: 1px solid var(--border); color: var(--accent2); font-size: .68rem; padding: .2rem .55rem; border-radius: 2rem; pointer-events: none; }
+    .badge-new { position: absolute; top: 12px; right: 12px; z-index: 4; background: var(--grad); color: #fff; font-size: .68rem; font-weight: 700; padding: .2rem .6rem; border-radius: 2rem; letter-spacing: .08em; }
+    .project-body { padding: 1.6rem; text-align: center; }
+
+    /* ── SERIES SHOWCASE ── */
+    .series-showcase { margin-top: 3rem; background: var(--bg-card); border: 1px solid var(--border); border-radius: 1rem; overflow: hidden; }
+    .series-showcase-header { padding: 1.4rem 1.6rem .5rem; text-align: center; }
+    .series-showcase-title { font-size: 1.1rem; font-weight: 600; color: var(--text-main); }
+    .series-showcase-sub { font-size: .88rem; color: var(--text-sub); margin-top: .3rem; }
+    .series-tabs { display: flex; gap: .5rem; padding: .9rem 1.6rem; border-bottom: 1px solid var(--border); flex-wrap: wrap; justify-content: center; }
+    .series-tab { padding: .4rem 1.2rem; border-radius: 2rem; border: 1px solid var(--border); background: transparent; color: var(--text-sub); font-size: .9rem; font-family: inherit; cursor: pointer; transition: all .2s; }
+    .series-tab.active { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+    .series-tab:hover:not(.active) { border-color: var(--accent); color: var(--accent); }
+    .series-panel { display: none; }
+    .series-panel.active { display: block; }
+    .layout-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: .6rem; padding: 1rem 1.6rem .6rem; }
+    .layout-cell { position: relative; }
+    .layout-thumb-link { display: block; border-radius: .5rem; overflow: hidden; border: 1px solid var(--border); cursor: zoom-in; transition: border-color .2s, transform .2s; }
+    .layout-thumb-link:hover { border-color: var(--accent); transform: translateY(-2px); }
+    .layout-thumb { width: 100%; aspect-ratio: 16/9; object-fit: cover; display: block; }
+    .layout-label { text-align: center; margin-top: .5rem; }
+    .layout-name-en-only { font-size: .8rem; font-weight: 700; color: var(--accent); display: block; }
+    .layout-name-jp { font-size: .74rem; color: var(--text-sub); display: block; }
+    .layout-tooltip { position: absolute; bottom: calc(100% + 6px); left: 50%; transform: translateX(-50%); background: var(--bg-deep); border: 1px solid var(--accent); color: var(--text-main); font-size: .74rem; padding: .5rem .8rem; border-radius: .5rem; white-space: nowrap; z-index: 10; opacity: 0; pointer-events: none; transition: opacity .2s; box-shadow: 0 4px 16px rgba(59,158,255,.2); }
+    .layout-cell:hover .layout-tooltip { opacity: 1; }
+    .series-cta { padding: 1.2rem 1.6rem 1.6rem; text-align: center; }
+
+    /* ── WHAT'S INCLUDED ── */
+    .icon-check-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px,1fr)); gap: .85rem; max-width: 900px; margin: 0 auto; }
+    .merit-sub-item { display: flex; gap: .8rem; align-items: flex-start; padding: .8rem 1rem; background: rgba(59,158,255,.04); border: 1px solid var(--border); border-radius: .6rem; }
+    .merit-sub-icon { width: 28px; height: 28px; border-radius: 50%; flex-shrink: 0; background: rgba(59,158,255,.12); display: flex; align-items: center; justify-content: center; color: var(--accent2); font-weight: 700; font-size: .8rem; }
+    .merit-sub-item p { font-size: 1rem; color: var(--text-main); }
+
+    /* ── USE CASES ── */
+    .use-case-grid { display: flex; flex-wrap: wrap; gap: .7rem; justify-content: center; max-width: 720px; margin: 0 auto; }
+    .use-case-grid .tag { font-size: .95rem; padding: .55rem 1.3rem; }
+
+    /* ── TRUST STRIP ── */
+    #trust { background: var(--bg-deep); }
+    .trust-box { max-width: 780px; margin: 0 auto; background: var(--bg-card); border: 1px solid var(--border); border-radius: 1rem; padding: 2rem clamp(1.5rem,4vw,2.5rem); display: flex; gap: 1.5rem; align-items: flex-start; }
+    .trust-avatar { width: 52px; height: 52px; border-radius: 50%; background: var(--grad); flex-shrink: 0; display: flex; align-items: center; justify-content: center; font-weight: 700; color: #fff; font-size: 1.2rem; }
+    .trust-box p { color: var(--text-sub); font-size: .95rem; line-height: 1.75; }
+    .trust-box strong { color: var(--text-main); }
+    .trust-box a { color: var(--accent); text-decoration: none; }
+    .trust-box a:hover { color: var(--accent2); }
+
+    /* ── FINAL CTA ── */
+    #final-cta { background: var(--bg-mid); text-align: center; }
+    .final-cta-inner { max-width: 620px; margin: 0 auto; }
+    .final-cta-inner p { color: var(--text-sub); margin-bottom: 2rem; line-height: 1.8; }
+
+    /* ── FOOTER ── */
+    footer { background: var(--bg-deep); border-top: 1px solid var(--border); padding: 2rem clamp(1.5rem, 8vw, 8rem); display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; }
+    .footer-logo { font-family: 'Inter', sans-serif; font-weight: 700; font-size: 1.1rem; background: var(--grad); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    footer p { font-size: .82rem; color: var(--text-sub); }
+    footer .foot-links { display: flex; gap: 1rem; }
+    footer .foot-links a { color: var(--text-sub); text-decoration: none; font-size: .85rem; }
+    footer .foot-links a:hover { color: var(--accent2); }
+
+    /* ── Fade-in ── */
+    .fade-in { opacity: 0; transform: translateY(24px); transition: opacity .7s ease, transform .7s ease; }
+    .fade-in.visible { opacity: 1; transform: none; }
+
+    /* ── Responsive ── */
+    @media (max-width: 900px) {
+      .layout-grid { grid-template-columns: repeat(3, 1fr); gap: .5rem 0; }
+      .layout-grid .layout-cell:nth-child(n+4) { display: none; }
+      .stats-bar { max-width: 100%; }
+    }
+    @media (max-width: 768px) {
+      .nav-links { display: none; }
+      .hero-cta { flex-direction: column; }
+      .hero-flex { grid-template-columns: 1fr; }
+      .hero-visual { order: -1; }
+      footer { flex-direction: column; text-align: center; }
+      .trust-box { flex-direction: column; align-items: center; text-align: center; }
+      .stats-bar { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 480px) {
+      .layout-grid { grid-template-columns: 1fr 1fr; }
+      .layout-grid .layout-cell:nth-child(n+4) { display: block; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ────────────────── NAV ────────────────── -->
+<nav>
+  <a href="#hero" class="nav-logo">tashida</a>
+  <ul class="nav-links">
+    <li><a href="#why-templates" class="ja">選ばれる理由</a><a href="#why-templates" class="en">Why</a></li>
+    <li><a href="#templates" class="ja">プレビュー</a><a href="#templates" class="en">Preview</a></li>
+    <li><a href="#whats-included" class="ja">セット内容</a><a href="#whats-included" class="en">What's Included</a></li>
+    <li><a href="#final-cta" class="ja">購入</a><a href="#final-cta" class="en">Buy</a></li>
+  </ul>
+  <div class="nav-right">
+    <a href="https://ureds911-ops.github.io/" class="back-link" target="_blank" rel="noopener"><span class="ja">← ポートフォリオへ</span><span class="en">← Portfolio</span></a>
+    <button class="lang-toggle" onclick="toggleLang()">
+      <span class="ja">🇺🇸 English</span>
+      <span class="en">🇯🇵 日本語</span>
+    </button>
+  </div>
+</nav>
+
+<!-- ────────────────── HERO ────────────────── -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+  <div class="hero-content fade-in">
+    <div class="hero-flex">
+      <div>
+        <div class="hero-badge"><span></span>
+          <span class="ja">Gumroad で販売中</span><span class="en">Available on Gumroad</span>
+        </div>
+        <h1>
+          <span class="ja">AI <span class="name">スライドテンプレート</span></span>
+          <span class="en">AI Slide<br><span class="name">Templates</span></span>
+        </h1>
+        <p class="hero-sub">
+          <span class="ja">AI画像生成 × PowerPointスライドマスター。<br>3シリーズ × 5レイアウト、全15スライドを収録した、すぐに使えるプロフェッショナルテンプレート。</span>
+          <span class="en">AI-generated backgrounds × PowerPoint slide masters.<br>3 series × 5 layouts, 15 slides in total — a ready-to-use professional template pack.</span>
+        </p>
+        <div class="hero-tags">
+          <span class="tag ja">デザインテーマ3種</span><span class="tag en">3 Design Themes</span>
+          <span class="tag ja">各テーマ5レイアウト</span><span class="tag en">5 Layouts / Design Theme</span>
+          <span class="tag ja">スライドマスター付</span><span class="tag en">Slide Master Included</span>
+          <span class="tag ja">プラグイン不要</span><span class="tag en">No Plugins Needed</span>
+        </div>
+        <div class="hero-cta">
+          <a href="https://tashida.gumroad.com/l/zrvyyn" class="btn btn-primary" target="_blank" rel="noopener">
+            <span class="ja">Gumroadで購入</span><span class="en">Buy on Gumroad</span>
+          </a>
+          <a href="#templates" class="btn btn-outline">
+            <span class="ja">プレビューを見る</span><span class="en">View Live Preview</span>
+          </a>
+        </div>
+        <div class="stats-bar">
+          <div class="stat-item"><div class="stat-num">3</div><div class="stat-label ja">シリーズ</div><div class="stat-label en">Series</div></div>
+          <div class="stat-item"><div class="stat-num">5</div><div class="stat-label ja">レイアウト/シリーズ</div><div class="stat-label en">Layouts / Series</div></div>
+          <div class="stat-item"><div class="stat-num">15</div><div class="stat-label ja">スライド収録</div><div class="stat-label en">Slides Total</div></div>
+          <div class="stat-item"><div class="stat-num">100%</div><div class="stat-label ja">編集可能</div><div class="stat-label en">Editable</div></div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <img src="images/hero_diagram.png" alt="AI Presentation Template — Data to Model to Prediction diagram, editable in PowerPoint" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ────────────────── WHY CHOOSE THESE TEMPLATES ────────────────── -->
+<section id="why-templates">
+  <div class="fade-in section-intro">
+    <p class="section-label ja">テンプレートが選ばれる理由</p><p class="section-label en">Why Choose These Templates</p>
+    <h2><span class="ja">プロフェッショナル向けに設計</span><span class="en">Designed for Professionals</span></h2>
+    <div class="section-divider"></div>
+  </div>
+  <div class="services-grid">
+    <div class="service-card fade-in">
+      <div class="service-icon">🎨</div>
+      <h3><span class="ja">自由に編集可能</span><span class="en">Fully Editable</span></h3>
+      <p><span class="ja">スライドマスターを標準搭載し、一貫性のある簡単なカスタマイズが可能。標準フォントArialを使用しているため、文字化けの心配もありません。</span>
+      <span class="en">Comes with a built-in Slide Master for consistent, easy customization. Built with the standard Arial font, so there are no missing-font issues.</span></p>
+    </div>
+    <div class="service-card fade-in">
+      <div class="service-icon">📦</div>
+      <h3><span class="ja">すぐに使える</span><span class="en">Ready to Use</span></h3>
+      <p><span class="ja">プラグイン不要、サブスクリプション不要。お使いのPowerPointでファイルを開くだけで、すぐにプレゼンを始められます。</span>
+      <span class="en">No plugins, no subscriptions. Just open the file in the PowerPoint you already have and start presenting.</span></p>
+    </div>
+    <div class="service-card fade-in">
+      <div class="service-icon">⚡</div>
+      <h3><span class="ja">シンプルな操作手順</span><span class="en">Simple Workflow</span></h3>
+      <p><span class="ja">開く → 編集する → 発表する。ダウンロードからプロフェッショナルなプレゼンまで、3つのシンプルなステップです。</span>
+      <span class="en">Open → Edit → Present. Three simple steps from download to a professional presentation.</span></p>
+    </div>
+  </div>
+</section>
+
+<!-- ────────────────── LIVE PREVIEW ────────────────── -->
+<section id="templates">
+  <div class="fade-in section-intro">
+    <p class="section-label">Templates</p>
+    <h2><span class="ja">ライブプレビュー — 3シリーズ × 5レイアウト</span><span class="en">Live Preview — 3 Series × 5 Layouts</span></h2>
+    <div class="section-divider"></div>
+  </div>
+
+  <div class="project-card fade-in">
+    <div class="project-visual" id="gallery1">
+      <a href="images/styles_comparison.png"
+         class="glightbox gallery-lb-link"
+         id="gallery1-lb"
+         data-gallery="ppt-gallery"
+         data-title="3-Style Comparison / 3スタイル比較"
+         data-description="Light Minimal / Dark Corporate / Tech Blue — 3 series x 5 layouts"
+         aria-label="Click to enlarge / クリックで拡大"></a>
+      <img class="gallery-img active" src="images/styles_comparison.png" alt="3-Style Comparison" />
+      <img class="gallery-img" src="images/all_15_slides.png" alt="All 15 Slide Layouts" />
+      <img class="gallery-img" src="images/usage_scene.png" alt="Usage Scene" />
+      <button class="gallery-btn gallery-prev" onclick="galleryNav('gallery1',-1)" aria-label="Previous">&#8249;</button>
+      <button class="gallery-btn gallery-next" onclick="galleryNav('gallery1', 1)" aria-label="Next">&#8250;</button>
+      <div class="gallery-dots">
+        <button class="gallery-dot active" onclick="galleryGoto('gallery1',0)"></button>
+        <button class="gallery-dot" onclick="galleryGoto('gallery1',1)"></button>
+        <button class="gallery-dot" onclick="galleryGoto('gallery1',2)"></button>
+      </div>
+      <div class="gallery-caption" id="gallery1-caption">
+        <span class="ja">3スタイル比較</span><span class="en">3-Style Comparison</span>
+      </div>
+      <div class="gallery-hint ja">クリックで拡大</div><div class="gallery-hint en">Click to enlarge</div>
+      <span class="badge-new">NEW</span>
+    </div>
+    <div class="project-body">
+      <h3 style="font-size:1.15rem; margin-bottom:.6rem;">
+        <span class="ja">AI生成背景テンプレート × PowerPointスライドマスター</span>
+        <span class="en">AI-Generated Backgrounds × PowerPoint Slide Master</span>
+      </h3>
+      <p style="color:var(--text-sub);">
+        <span class="ja">AI画像生成ツール Gemini（Nano Banana）で制作した背景をPowerPointのスライドマスターに組み込んだ、AI講義・企業研修・教育機関向けテンプレート。</span>
+        <span class="en">Backgrounds generated with the AI image tool Gemini (Nano Banana), built into PowerPoint slide masters — designed for AI lectures, corporate training, and educational institutions.</span>
+      </p>
+    </div>
+  </div>
+
+  <!-- シリーズショーケース -->
+  <div class="series-showcase fade-in">
+    <div class="series-showcase-header">
+      <p class="series-showcase-title ja">3シリーズ × 5レイアウト プレビュー</p>
+      <p class="series-showcase-title en">3 Series × 5 Layouts Preview</p>
+      <p class="series-showcase-sub ja">各スライドをクリックすると拡大表示できます。Cover（表紙）/ Section（区切り）/ Normal（本文）/ Diagram（図解）/ Highlight（強調）</p>
+      <p class="series-showcase-sub en">Click any slide to view it enlarged. Cover / Section / Normal / Diagram / Highlight</p>
+    </div>
+    <div class="series-tabs">
+      <button class="series-tab active" onclick="switchSeries('tech')">Tech Blue</button>
+      <button class="series-tab" onclick="switchSeries('dark')">Dark Corporate</button>
+      <button class="series-tab" onclick="switchSeries('light')">Light Minimal</button>
+    </div>
+
+    <!-- Tech Blue -->
+    <div id="series-tech" class="series-panel active">
+      <div class="layout-grid">
+        <div class="layout-cell">
+          <div class="layout-tooltip ja">プレゼンの表紙。タイトル・日付・発表者名を記載</div>
+          <div class="layout-tooltip en">Cover slide with title, date, and presenter name</div>
+          <a href="#" class="layout-thumb-link" onclick="openSeriesLb('tech',0,event)"><img src="images/slides/TB_Cover.png" class="layout-thumb" alt="TB Cover" loading="lazy" /></a>
+          <div class="layout-label"><span class="layout-name-en-only">Cover</span><span class="layout-name-jp ja">（表紙）</span></div>
+        </div>
+        <div class="layout-cell">
+          <div class="layout-tooltip ja">章・セクションの区切りページ</div>
+          <div class="layout-tooltip en">Section divider page for chapters</div>
+          <a href="#" class="layout-thumb-link" onclick="openSeriesLb('tech',1,event)"><img src="images/slides/TB_Section.png" class="layout-thumb" alt="TB Section" loading="lazy" /></a>
+          <div class="layout-label"><span class="layout-name-en-only">Section</span><span class="layout-name-jp ja">（区切り）</span></div>
+        </div>
+        <div class="layout-cell">
+          <div class="layout-tooltip ja">標準コンテンツページ。テキスト・箇条書き最適</div>
+          <div class="layout-tooltip en">Standard content page, ideal for text and bullets</div>
+          <a href="#" class="layout-thumb-link" onclick="openSeriesLb('tech',2,event)"><img src="images/slides/TB_Normal.png" class="layout-thumb" alt="TB Normal" loading="lazy" /></a>
+          <div class="layout-label"><span class="layout-name-en-only">Normal</span><span class="layout-name-jp ja">（本文）</span></div>
+        </div>
+        <div class="layout-cell">
+          <div class="layout-tooltip ja">図・チャート・フロー図の表示用</div>
+          <div class="layout-tooltip en">For charts, diagrams, and flowcharts</div>
+          <a href="#" class="layout-thumb-link" onclick="openSeriesLb('tech',3,event)"><img src="images/slides/TB_Diagram.png" class="layout-thumb" alt="TB Diagram" loading="lazy" /></a>
+          <div class="layout-label"><span class="layout-name-en-only">Diagram</span><span class="layout-name-jp ja">（図解）</span></div>
+        </div>
+        <div class="layout-cell">
+          <div class="layout-tooltip ja">重要ポイント・まとめ・強調スライド</div>
+          <div class="layout-tooltip en">For key points, summaries, and highlights</div>
+          <a href="#" class="layout-thumb-link" onclick="openSeriesLb('tech',4,event)"><img src="images/slides/TB_Highlight.png" class="layout-thumb" alt="TB Highlight" loading="lazy" /></a>
+          <div class="layout-label"><span class="layout-name-en-only">Highlight</span><span class="layout-name-jp ja">（強調）</span></div>
+        </div>
+      </div>
+      <div class="series-cta"><a href="https://tashida.gumroad.com/l/zrvyyn" class="btn btn-outline" target="_blank" rel="noopener"><span class="ja">今すぐ購入 — Tech Blue</span><span class="en">Buy Now — Tech Blue</span></a></div>
+    </div>
+
+    <!-- Dark Corporate -->
+    <div id="series-dark" class="series-panel">
+      <div class="layout-grid">
+        <div class="layout-cell">
+          <div class="layout-tooltip ja">プレゼンの表紙。タイトル・日付・発表者名を記載</div>
+          <div class="layout-tooltip en">Cover slide with title, date, and presenter name</div>
+          <a href="#" class="layout-thumb-link" onclick="openSeriesLb('dark',0,event)"><img src="images/slides/DC_Cover.png" class="layout-thumb" alt="DC Cover" loading="lazy" /></a>
+          <div class="layout-label"><span class="layout-name-en-only">Cover</span><span class="layout-name-jp ja">（表紙）</span></div>
+        </div>
+        <div class="layout-cell">
+          <div class="layout-tooltip ja">章・セクションの区切りページ</div>
+          <div class="layout-tooltip en">Section divider page for chapters</div>
+          <a href="#" class="layout-thumb-link" onclick="openSeriesLb('dark',1,event)"><img src="images/slides/DC_Section.png" class="layout-thumb" alt="DC Section" loading="lazy" /></a>
+          <div class="layout-label"><span class="layout-name-en-only">Section</span><span class="layout-name-jp ja">（区切り）</span></div>
+        </div>
+        <div class="layout-cell">
+          <div class="layout-tooltip ja">標準コンテンツページ。テキスト・箇条書き最適</div>
+          <div class="layout-tooltip en">Standard content page, ideal for text and bullets</div>
+          <a href="#" class="layout-thumb-link" onclick="openSeriesLb('dark',2,event)"><img src="images/slides/DC_Normal.png" class="layout-thumb" alt="DC Normal" loading="lazy" /></a>
+          <div class="layout-label"><span class="layout-name-en-only">Normal</span><span class="layout-name-jp ja">（本文）</span></div>
+        </div>
+        <div class="layout-cell">
+          <div class="layout-tooltip ja">図・チャート・フロー図の表示用</div>
+          <div class="layout-tooltip en">For charts, diagrams, and flowcharts</div>
+          <a href="#" class="layout-thumb-link" onclick="openSeriesLb('dark',3,event)"><img src="images/slides/DC_Diagram.png" class="layout-thumb" alt="DC Diagram" loading="lazy" /></a>
+          <div class="layout-label"><span class="layout-name-en-only">Diagram</span><span class="layout-name-jp ja">（図解）</span></div>
+        </div>
+        <div class="layout-cell">
+          <div class="layout-tooltip ja">重要ポイント・まとめ・強調スライド</div>
+          <div class="layout-tooltip en">For key points, summaries, and highlights</div>
+          <a href="#" class="layout-thumb-link" onclick="openSeriesLb('dark',4,event)"><img src="images/slides/DC_Highlight.png" class="layout-thumb" alt="DC Highlight" loading="lazy" /></a>
+          <div class="layout-label"><span class="layout-name-en-only">Highlight</span><span class="layout-name-jp ja">（強調）</span></div>
+        </div>
+      </div>
+      <div class="series-cta"><a href="https://tashida.gumroad.com/l/zrvyyn" class="btn btn-outline" target="_blank" rel="noopener"><span class="ja">今すぐ購入 — Dark Corporate</span><span class="en">Buy Now — Dark Corporate</span></a></div>
+    </div>
+
+    <!-- Light Minimal -->
+    <div id="series-light" class="series-panel">
+      <div class="layout-grid">
+        <div class="layout-cell">
+          <div class="layout-tooltip ja">プレゼンの表紙。タイトル・日付・発表者名を記載</div>
+          <div class="layout-tooltip en">Cover slide with title, date, and presenter name</div>
+          <a href="#" class="layout-thumb-link" onclick="openSeriesLb('light',0,event)"><img src="images/slides/LM_Cover.png" class="layout-thumb" alt="LM Cover" loading="lazy" /></a>
+          <div class="layout-label"><span class="layout-name-en-only">Cover</span><span class="layout-name-jp ja">（表紙）</span></div>
+        </div>
+        <div class="layout-cell">
+          <div class="layout-tooltip ja">章・セクションの区切りページ</div>
+          <div class="layout-tooltip en">Section divider page for chapters</div>
+          <a href="#" class="layout-thumb-link" onclick="openSeriesLb('light',1,event)"><img src="images/slides/LM_Section.png" class="layout-thumb" alt="LM Section" loading="lazy" /></a>
+          <div class="layout-label"><span class="layout-name-en-only">Section</span><span class="layout-name-jp ja">（区切り）</span></div>
+        </div>
+        <div class="layout-cell">
+          <div class="layout-tooltip ja">標準コンテンツページ。テキスト・箇条書き最適</div>
+          <div class="layout-tooltip en">Standard content page, ideal for text and bullets</div>
+          <a href="#" class="layout-thumb-link" onclick="openSeriesLb('light',2,event)"><img src="images/slides/LM_Normal.png" class="layout-thumb" alt="LM Normal" loading="lazy" /></a>
+          <div class="layout-label"><span class="layout-name-en-only">Normal</span><span class="layout-name-jp ja">（本文）</span></div>
+        </div>
+        <div class="layout-cell">
+          <div class="layout-tooltip ja">図・チャート・フロー図の表示用</div>
+          <div class="layout-tooltip en">For charts, diagrams, and flowcharts</div>
+          <a href="#" class="layout-thumb-link" onclick="openSeriesLb('light',3,event)"><img src="images/slides/LM_Diagram.png" class="layout-thumb" alt="LM Diagram" loading="lazy" /></a>
+          <div class="layout-label"><span class="layout-name-en-only">Diagram</span><span class="layout-name-jp ja">（図解）</span></div>
+        </div>
+        <div class="layout-cell">
+          <div class="layout-tooltip ja">重要ポイント・まとめ・強調スライド</div>
+          <div class="layout-tooltip en">For key points, summaries, and highlights</div>
+          <a href="#" class="layout-thumb-link" onclick="openSeriesLb('light',4,event)"><img src="images/slides/LM_Highlight.png" class="layout-thumb" alt="LM Highlight" loading="lazy" /></a>
+          <div class="layout-label"><span class="layout-name-en-only">Highlight</span><span class="layout-name-jp ja">（強調）</span></div>
+        </div>
+      </div>
+      <div class="series-cta"><a href="https://tashida.gumroad.com/l/zrvyyn" class="btn btn-outline" target="_blank" rel="noopener"><span class="ja">今すぐ購入 — Light Minimal</span><span class="en">Buy Now — Light Minimal</span></a></div>
+    </div>
+  </div>
+</section>
+
+<!-- ────────────────── WHAT'S INCLUDED ────────────────── -->
+<section id="whats-included">
+  <div class="fade-in section-intro">
+    <p class="section-label ja">セット内容</p><p class="section-label en">What's Included</p>
+    <h2><span class="ja">すべて含まれています</span><span class="en">Everything You Need</span></h2>
+    <div class="section-divider"></div>
+  </div>
+  <div class="fade-in icon-check-grid">
+    <div class="merit-sub-item"><div class="merit-sub-icon">✓</div><p><span class="ja">スライド15枚</span><span class="en">15 Slides</span></p></div>
+    <div class="merit-sub-item"><div class="merit-sub-icon">✓</div><p><span class="ja">テーマ3種</span><span class="en">3 Themes</span></p></div>
+    <div class="merit-sub-item"><div class="merit-sub-icon">✓</div><p><span class="ja">PPTXファイル</span><span class="en">PPTX File</span></p></div>
+    <div class="merit-sub-item"><div class="merit-sub-icon">✓</div><p><span class="ja">PNGプレビュー</span><span class="en">PNG Preview</span></p></div>
+    <div class="merit-sub-item"><div class="merit-sub-icon">✓</div><p><span class="ja">ドキュメント</span><span class="en">Documentation</span></p></div>
+    <div class="merit-sub-item"><div class="merit-sub-icon">✓</div><p><span class="ja">問い合わせ用PDF</span><span class="en">Contact PDF</span></p></div>
+    <div class="merit-sub-item"><div class="merit-sub-icon">✓</div><p><span class="ja">無料フォント</span><span class="en">Free Fonts</span></p></div>
+  </div>
+</section>
+
+<!-- ────────────────── USE CASES ────────────────── -->
+<section id="use-cases" style="background:var(--bg-deep);">
+  <div class="fade-in section-intro">
+    <p class="section-label ja">こんなシーンに</p><p class="section-label en">Use Cases</p>
+    <h2><span class="ja">幅広い活用シーンに対応</span><span class="en">Built for a Wide Range of Scenes</span></h2>
+    <div class="section-divider"></div>
+  </div>
+  <div class="fade-in use-case-grid">
+    <span class="tag ja">AI講義</span><span class="tag en">AI Lectures</span>
+    <span class="tag ja">技術プレゼンテーション</span><span class="tag en">Technical Presentations</span>
+    <span class="tag ja">ビジネス会議</span><span class="tag en">Business Meetings</span>
+    <span class="tag ja">研修・トレーニング</span><span class="tag en">Training Courses</span>
+  </div>
+</section>
+
+<!-- ────────────────── TRUST STRIP ────────────────── -->
+<section id="trust">
+  <div class="fade-in trust-box">
+    <div class="trust-avatar">t</div>
+    <p>
+      <span class="ja"><strong>tashida</strong> — 水力発電・ISO9001・技術翻訳の実務経験を持つベテランコンサルタント。フリーランスとして16年の受注実績を活かし、AIを使った実践的な資料設計に取り組んでいます。<br><a href="tashida_profile_ja.pdf" target="_blank" rel="noopener">→ プロフィールを見る（PDF）</a> ・ <a href="https://ureds911-ops.github.io/" target="_blank" rel="noopener">実績・ポートフォリオを見る</a></span>
+      <span class="en"><strong>tashida</strong> — a veteran consultant with hands-on experience in hydropower engineering, ISO 9001, and technical translation. Drawing on 16 years as a freelancer, applying AI to practical document design.<br><a href="tashida_profile_en.pdf" target="_blank" rel="noopener">→ View Profile (PDF)</a> ・ <a href="https://ureds911-ops.github.io/" target="_blank" rel="noopener">View Portfolio</a></span>
+    </p>
+  </div>
+</section>
+
+<!-- ────────────────── FINAL CTA ────────────────── -->
+<section id="final-cta">
+  <div class="fade-in final-cta-inner">
+    <h2><span class="ja">PowerPoint テンプレートをお探しですか？</span><span class="en">Looking for PowerPoint Templates?</span></h2>
+    <p>
+      <span class="ja">AI講義・企業研修・技術プレゼン向けに設計された、すぐに使えるプロフェッショナルテンプレート。</span>
+      <span class="en">Ready-to-use professional templates designed for AI lectures, corporate training, and technical presentations.</span>
+    </p>
+    <a href="https://tashida.gumroad.com/l/zrvyyn" class="btn btn-primary" target="_blank" rel="noopener">
+      <span class="ja">Gumroadで購入</span><span class="en">Buy on Gumroad</span>
+    </a>
+  </div>
+</section>
+
+<!-- ────────────────── FOOTER ────────────────── -->
+<footer>
+  <div style="display:flex; flex-direction:column; gap:.5rem;">
+    <span class="footer-logo">tashida</span>
+    <p class="ja">AI業務支援 / PPT テンプレート設計 / ISO9001 コンサルティング / 水力発電 技術翻訳</p>
+    <p class="en">AI Business Support / PPT Template Design / ISO 9001 Consulting / Hydropower Technical Translation</p>
+    <p style="font-size:.78rem; color:#4a6080;">© 2026 tashida. All rights reserved.</p>
+  </div>
+  <div class="foot-links">
+    <a href="https://ureds911-ops.github.io/" target="_blank" rel="noopener"><span class="ja">ポートフォリオ</span><span class="en">Portfolio</span></a>
+    <a href="https://tashida.gumroad.com/l/zrvyyn" target="_blank" rel="noopener">Gumroad</a>
+    <a href="https://github.com/ureds911-ops/ureds911-ops.github.io" target="_blank" rel="noopener">GitHub</a>
+    <a href="https://x.com/AshidaT0924" target="_blank" rel="noopener">X</a>
+  </div>
+</footer>
+
+<!-- GLightbox JS -->
+<script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+<script>
+  // ── 日英切替 ──
+  function toggleLang() {
+    const html = document.documentElement;
+    const next = html.getAttribute('data-lang') === 'en' ? 'ja' : 'en';
+    html.setAttribute('data-lang', next);
+    html.setAttribute('lang', next);
+    try { localStorage.setItem('lp-lang', next); } catch (e) {}
+  }
+  (function initLang() {
+    let saved = null;
+    try { saved = localStorage.getItem('lp-lang'); } catch (e) {}
+    if (saved === 'en') {
+      document.documentElement.setAttribute('data-lang', 'en');
+      document.documentElement.setAttribute('lang', 'en');
+    }
+  })();
+
+  // ── GLightbox 初期化（プロジェクトギャラリー用） ──
+  const lightbox = GLightbox({
+    selector: '.glightbox',
+    touchNavigation: true,
+    loop: true,
+    autoplayVideos: false,
+    openEffect: 'fade',
+    closeEffect: 'fade'
+  });
+
+  // ── シリーズライトボックス ──
+  const seriesData = {
+    dark: [
+      { href: 'images/slides/DC_Cover.png',    title: 'Dark Corporate — Cover' },
+      { href: 'images/slides/DC_Section.png',  title: 'Dark Corporate — Section' },
+      { href: 'images/slides/DC_Normal.png',   title: 'Dark Corporate — Normal' },
+      { href: 'images/slides/DC_Diagram.png',  title: 'Dark Corporate — Diagram' },
+      { href: 'images/slides/DC_Highlight.png',title: 'Dark Corporate — Highlight' }
+    ],
+    tech: [
+      { href: 'images/slides/TB_Cover.png',    title: 'Tech Blue — Cover' },
+      { href: 'images/slides/TB_Section.png',  title: 'Tech Blue — Section' },
+      { href: 'images/slides/TB_Normal.png',   title: 'Tech Blue — Normal' },
+      { href: 'images/slides/TB_Diagram.png',  title: 'Tech Blue — Diagram' },
+      { href: 'images/slides/TB_Highlight.png',title: 'Tech Blue — Highlight' }
+    ],
+    light: [
+      { href: 'images/slides/LM_Cover.png',    title: 'Light Minimal — Cover' },
+      { href: 'images/slides/LM_Section.png',  title: 'Light Minimal — Section' },
+      { href: 'images/slides/LM_Normal.png',   title: 'Light Minimal — Normal' },
+      { href: 'images/slides/LM_Diagram.png',  title: 'Light Minimal — Diagram' },
+      { href: 'images/slides/LM_Highlight.png',title: 'Light Minimal — Highlight' }
+    ]
+  };
+  let seriesLb = null;
+  function openSeriesLb(series, index, e) {
+    e.preventDefault();
+    if (seriesLb) { seriesLb.destroy(); seriesLb = null; }
+    seriesLb = GLightbox({ elements: seriesData[series], touchNavigation: true, loop: true, openEffect: 'fade', closeEffect: 'fade' });
+    seriesLb.openAt(index);
+  }
+
+  // ── シリーズタブ切り替え ──
+  function switchSeries(key) {
+    document.querySelectorAll('.series-tab').forEach(t => t.classList.remove('active'));
+    document.querySelectorAll('.series-panel').forEach(p => p.classList.remove('active'));
+    document.querySelector(`.series-tab[onclick="switchSeries('${key}')"]`).classList.add('active');
+    document.getElementById('series-' + key).classList.add('active');
+  }
+
+  // ── ギャラリー（lightbox連動） ──
+  const galleryLbSrcs = { gallery1: ['images/styles_comparison.png', 'images/all_15_slides.png', 'images/usage_scene.png'] };
+  const galleryLbTitles = {
+    gallery1: [
+      '3-Style Comparison / 3スタイル比較',
+      'All 15 Slide Layouts / 全15スライドレイアウト一覧',
+      'Usage Scene / AI講義・企業研修向け使用シーン'
+    ]
+  };
+  const galleryCaptionsJa = ['3スタイル比較', '全15スライドレイアウト一覧', 'AI講義・企業研修向け使用シーン'];
+  const galleryCaptionsEn = ['3-Style Comparison', 'All 15 Slide Layouts', 'AI Lecture &amp; Training Usage Scene'];
+
+  function galleryGoto(id, index) {
+    const g = document.getElementById(id);
+    const imgs = g.querySelectorAll('.gallery-img');
+    const dots = g.querySelectorAll('.gallery-dot');
+    imgs.forEach(i => i.classList.remove('active'));
+    dots.forEach(d => d.classList.remove('active'));
+    imgs[index].classList.add('active');
+    dots[index].classList.add('active');
+    const cap = document.getElementById(id + '-caption');
+    if (cap) cap.innerHTML = `<span class="ja">${galleryCaptionsJa[index]}</span><span class="en">${galleryCaptionsEn[index]}</span>`;
+    const lb = document.getElementById(id + '-lb');
+    if (lb && galleryLbSrcs[id]) {
+      lb.href = galleryLbSrcs[id][index];
+      lb.setAttribute('data-title', galleryLbTitles[id][index]);
+      lightbox.reload();
+    }
+  }
+  function galleryNav(id, dir) {
+    const g = document.getElementById(id);
+    const imgs = g.querySelectorAll('.gallery-img');
+    let cur = [...imgs].findIndex(i => i.classList.contains('active'));
+    galleryGoto(id, (cur + dir + imgs.length) % imgs.length);
+  }
+  setInterval(() => galleryNav('gallery1', 1), 4500);
+
+  // ── Fade-in on scroll ──
+  const observer = new IntersectionObserver(
+    (entries) => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }),
+    { threshold: 0.1 }
+  );
+  document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+</script>
+</body>
+</html>
