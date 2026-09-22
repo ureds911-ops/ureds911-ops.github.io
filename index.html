@@ -459,7 +459,7 @@
       font-size: 1rem; color: var(--text-sub); margin-bottom: 2.5rem;
       max-width: 680px; line-height: 1.8;
     }
-    .ai-compare-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+    .ai-compare-grid { display: grid; grid-template-columns: 1fr; gap: 1.75rem; }
     .ai-case {
       background: var(--bg-card); border: 1px solid var(--border);
       border-radius: .85rem; overflow: hidden;
@@ -646,7 +646,7 @@
 
     /* ── Responsive ── */
     @media (max-width: 900px) {
-      .reasons-grid, .merit-reasons, .ai-compare-grid { grid-template-columns: 1fr; }
+      .reasons-grid, .merit-reasons { grid-template-columns: 1fr; }
       .layout-grid { grid-template-columns: repeat(3, 1fr); gap: .5rem 0; }
       .layout-grid .layout-cell:nth-child(n+4) { display: none; }
     }
