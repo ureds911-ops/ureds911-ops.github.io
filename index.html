@@ -8,8 +8,6 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-  <!-- GLightbox -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -501,6 +499,7 @@
     /* ── SERVICES ── */
     #services { background: var(--bg-deep); }
     .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.2rem; }
+    #services .services-grid { grid-template-columns: 1fr; gap: 1.5rem; }
     .service-card {
       background: var(--bg-card); border: 1px solid var(--border);
       border-radius: .75rem; padding: 1.6rem;
@@ -678,11 +677,11 @@
   <span class="nav-logo">tashida</span>
   <ul class="nav-links">
     <li><a href="#hero">ホーム</a></li>
-    <li><a href="#templates">テンプレート</a></li>
     <li><a href="#merit">選ばれる理由</a></li>
     <li><a href="#services">サービス</a></li>
     <li><a href="#translation">技術翻訳</a></li>
     <li><a href="#about">プロフィール</a></li>
+    <li><a href="#ai-expertise">AI活用事例</a></li>
     <li><a href="#contact">お問い合わせ</a></li>
   </ul>
   <div class="lang-switch">
@@ -696,337 +695,46 @@
   <div class="hero-bg"></div>
   <div class="hero-grid"></div>
   <div class="hero-content fade-in">
-    <div class="hero-flex">
-      <div>
-        <div class="hero-badge">
-          <span></span>Gumroad で販売中
-        </div>
-        <h1>PowerPoint<br><span class="name">テンプレート</span></h1>
-        <p class="hero-sub">
-          <span>AI × 技術 × ビジネス</span>
-          <span>長年の実務経験から生まれたテンプレート</span>
-        </p>
-        <div class="hero-tags">
-          <span class="tag">全15枚編集可能</span>
-          <span class="tag">3種類のデザイン</span>
-          <span class="tag">スライドマスター付</span>
-          <span class="tag">すぐ使える</span>
-        </div>
-        <div class="hero-cta">
-          <a href="https://tashida.gumroad.com/l/zrvyyn" class="btn btn-primary" target="_blank" rel="noopener">Gumroadで購入</a>
-          <a href="#templates" class="btn btn-outline">プレビューを見る</a>
-        </div>
-      </div>
-      <div class="hero-visual">
-        <img src="images/hero_cover.png" alt="PowerPointテンプレート" />
-      </div>
+    <div class="hero-badge">
+      <span></span>フリーランス受注16年 ｜ AIを活用できるベテラン技術コンサルタント
     </div>
-  </div>
-</section>
-
-<!-- ────────────────── WHY CHOOSE THESE TEMPLATES ────────────────── -->
-<section id="why-templates">
-  <div class="fade-in">
-    <p class="section-label">テンプレートが選ばれる理由</p>
-    <h2>プロフェッショナル向けに設計</h2>
-    <div class="section-divider"></div>
-  </div>
-  <div class="fade-in" style="display:flex; flex-wrap:wrap; gap:.6rem; margin-bottom:2.5rem;">
-    <span class="tag">AI講義</span>
-    <span class="tag">技術プレゼンテーション</span>
-    <span class="tag">ビジネス会議</span>
-    <span class="tag">研修・トレーニング</span>
-  </div>
-  <div class="services-grid">
-    <div class="service-card fade-in">
-      <div class="service-icon">🎨</div>
-      <h3>自由に編集可能</h3>
-      <p>スライドマスターを標準搭載し、一貫性のある簡単なカスタマイズが可能。標準フォントArialを使用しているため、文字化けの心配もありません。</p>
+    <h1><span class="name">tashida</span></h1>
+    <p class="hero-sub">
+      <span>技術専門知識 × AI で、他では得られないアウトプットをご提供します。</span>
+      <span>水力発電 / ISO9001 / 技術翻訳 × AI活用の組み合わせが強みです。</span>
+    </p>
+    <div class="hero-tags">
+      <span class="tag">AI業務支援</span>
+      <span class="tag">PPT テンプレート設計</span>
+      <span class="tag">ISO9001 コンサルティング</span>
+      <span class="tag">水力発電 技術翻訳</span>
     </div>
-    <div class="service-card fade-in">
-      <div class="service-icon">📦</div>
-      <h3>すぐに使える</h3>
-      <p>プラグイン不要、サブスクリプション不要。お使いのPowerPointでファイルを開くだけで、すぐにプレゼンを始められます。</p>
+    <div class="hero-cta">
+      <a href="#ai-expertise" class="btn btn-primary">実績を見る</a>
+      <a href="#contact" class="btn btn-outline">お問い合わせ</a>
     </div>
-    <div class="service-card fade-in">
-      <div class="service-icon">⚡</div>
-      <h3>シンプルな操作手順</h3>
-      <p>開く → 編集する → 発表する。ダウンロードからプロフェッショナルなプレゼンまで、3つのシンプルなステップです。</p>
-    </div>
-  </div>
-</section>
-
-<!-- ────────────────── TEMPLATES / LIVE PREVIEW ────────────────── -->
-<section id="templates">
-  <div class="fade-in">
-    <p class="section-label">Templates</p>
-    <h2>ライブプレビュー — 3シリーズ × 5レイアウト</h2>
-    <div class="section-divider"></div>
-  </div>
-  <div class="projects-grid">
-
-    <!-- Project 1: PPT Template（#2: GLightbox実装） -->
-    <div class="project-card fade-in">
-      <div class="project-visual project-gallery" id="gallery1">
-        <!-- lightbox用アンカーをアクティブ画像に被せる -->
-        <a href="images/styles_comparison.png"
-           class="glightbox gallery-lb-link"
-           id="gallery1-lb"
-           data-gallery="ppt-gallery"
-           data-title="3スタイル比較 — Light Minimal / Dark Corporate / Tech Blue"
-           data-description="AI生成背景テンプレート。3シリーズ × 5レイアウトを収録。"
-           aria-label="クリックで拡大"></a>
-        <img class="gallery-img active" src="images/styles_comparison.png" alt="3スタイル比較" data-src="images/styles_comparison.png" data-title="3スタイル比較" />
-        <img class="gallery-img" src="images/all_15_slides.png" alt="全15スライドレイアウト一覧" data-src="images/all_15_slides.png" data-title="全15スライドレイアウト一覧" />
-        <img class="gallery-img" src="images/usage_scene.png" alt="使用シーン" data-src="images/usage_scene.png" data-title="AI講義・企業研修向け使用シーン" />
-        <button class="gallery-btn gallery-prev" onclick="galleryNav('gallery1',-1)" aria-label="前の画像">&#8249;</button>
-        <button class="gallery-btn gallery-next" onclick="galleryNav('gallery1', 1)" aria-label="次の画像">&#8250;</button>
-        <div class="gallery-dots">
-          <button class="gallery-dot active" onclick="galleryGoto('gallery1',0)"></button>
-          <button class="gallery-dot" onclick="galleryGoto('gallery1',1)"></button>
-          <button class="gallery-dot" onclick="galleryGoto('gallery1',2)"></button>
-        </div>
-        <div class="gallery-caption" id="gallery1-caption">3スタイル比較</div>
-        <div class="gallery-hint">クリックで拡大</div>
-        <span class="badge-new">NEW</span>
-      </div>
-      <div class="project-body">
-        <div class="project-tags">
-          <span class="ptag">PowerPoint</span>
-          <span class="ptag">AI画像生成</span>
-          <span class="ptag">Gumroad出品中</span>
-        </div>
-        <h3>AI生成背景テンプレート × PowerPointスライドマスター</h3>
-        <p>AI画像生成ツール Gemini（Nano Banana）で制作した背景をPowerPointのスライドマスターに組み込んだ、AI講義・企業研修・教育機関向けテンプレート。</p>
-        <div class="project-features">
-          <div class="feature-row">3テーマ：Light-Minimal / Dark-Corporate / Tech-Blue</div>
-          <div class="feature-row">各テーマ5レイアウト（Cover・Section・Normal・Diagram・Highlight）</div>
-          <div class="feature-row">スライドマスターで一括管理、再利用性・カスタマイズ性が高い設計</div>
-          <div class="feature-row">PPTXファイル ＋ PNGプレビュー同梱、即利用可能</div>
-        </div>
-        <a href="https://tashida.gumroad.com/l/zrvyyn" class="btn btn-primary" target="_blank" rel="noopener" style="margin-top:1.2rem; display:inline-block;">Gumroadで購入</a>
-      </div>
-    </div>
-
-  </div>
-
-  <!-- #5/#8: シリーズショーケース（修正済み画像 + lightbox + レイアウト説明） -->
-  <div class="series-showcase fade-in">
-    <div class="series-showcase-header">
-      <p class="series-showcase-title">3シリーズ × 5レイアウト プレビュー</p>
-      <p class="series-showcase-sub">
-        各スライドをクリックすると拡大表示できます。
-        Cover（表紙）/ Section（区切り）/ Normal（本文）/ Diagram（図解）/ Highlight（強調）
-      </p>
-    </div>
-    <div class="series-tabs">
-      <button class="series-tab active" onclick="switchSeries('dark')">Dark Corporate</button>
-      <button class="series-tab" onclick="switchSeries('tech')">Tech Blue</button>
-      <button class="series-tab" onclick="switchSeries('light')">Light Minimal</button>
-    </div>
-
-    <!-- Dark Corporate -->
-    <div id="series-dark" class="series-panel active">
-      <div class="layout-grid">
-        <div class="layout-cell">
-          <div class="layout-tooltip">プレゼンの表紙。タイトル・日付・発表者名を記載</div>
-          <a href="#" class="layout-thumb-link" onclick="openSeriesLb('dark',0,event)">
-            <img src="images/slides/DC_Cover.png" class="layout-thumb" alt="DC Cover" loading="lazy" />
-          </a>
-          <div class="layout-label">
-            <span class="layout-name-en">Cover</span>
-            <span class="layout-name-jp">（表紙）</span>
+    <div class="hero-reasons">
+      <p class="reasons-title">Why tashida ── 選ばれる２つの理由</p>
+      <div class="reasons-grid">
+        <div class="reason-card">
+          <div class="reason-num">01</div>
+          <div>
+            <strong>現在もAIスキルを活用して業務サポート継続中</strong>
+            <p>業務サポート継続中のクライアント様社内で、AIスキルを活用してホームページ見直し・研修資料作成・ISO9001 内部監査／外部審査対応を推進中。</p>
           </div>
         </div>
-        <div class="layout-cell">
-          <div class="layout-tooltip">章・セクションの区切りページ</div>
-          <a href="#" class="layout-thumb-link" onclick="openSeriesLb('dark',1,event)">
-            <img src="images/slides/DC_Section.png" class="layout-thumb" alt="DC Section" loading="lazy" />
-          </a>
-          <div class="layout-label">
-            <span class="layout-name-en">Section</span>
-            <span class="layout-name-jp">（区切り）</span>
-          </div>
-        </div>
-        <div class="layout-cell">
-          <div class="layout-tooltip">標準コンテンツページ。テキスト・箇条書き最適</div>
-          <a href="#" class="layout-thumb-link" onclick="openSeriesLb('dark',2,event)">
-            <img src="images/slides/DC_Normal.png" class="layout-thumb" alt="DC Normal" loading="lazy" />
-          </a>
-          <div class="layout-label">
-            <span class="layout-name-en">Normal</span>
-            <span class="layout-name-jp">（本文）</span>
-          </div>
-        </div>
-        <div class="layout-cell">
-          <div class="layout-tooltip">図・チャート・フロー図の表示用</div>
-          <a href="#" class="layout-thumb-link" onclick="openSeriesLb('dark',3,event)">
-            <img src="images/slides/DC_Diagram.png" class="layout-thumb" alt="DC Diagram" loading="lazy" />
-          </a>
-          <div class="layout-label">
-            <span class="layout-name-en">Diagram</span>
-            <span class="layout-name-jp">（図解）</span>
-          </div>
-        </div>
-        <div class="layout-cell">
-          <div class="layout-tooltip">重要ポイント・まとめ・強調スライド</div>
-          <a href="#" class="layout-thumb-link" onclick="openSeriesLb('dark',4,event)">
-            <img src="images/slides/DC_Highlight.png" class="layout-thumb" alt="DC Highlight" loading="lazy" />
-          </a>
-          <div class="layout-label">
-            <span class="layout-name-en">Highlight</span>
-            <span class="layout-name-jp">（強調）</span>
+        <div class="reason-card">
+          <div class="reason-num">02</div>
+          <div>
+            <strong>フリーランス受注16年の実績</strong>
+            <ul>
+              <li>① 水力発電機 固定子・回転子の組立・据付に関する技術文書の英日翻訳受注多数（2023〜2026年：110件 / 194,000語）</li>
+              <li>② ISO9001:2015に基づく品質マネジメントシステム導入コンサルティングおよび11年間の運用実績</li>
+            </ul>
           </div>
         </div>
       </div>
-      <div style="padding: 0 clamp(1.5rem, 8vw, 8rem) 1rem;">
-        <a href="https://tashida.gumroad.com/l/zrvyyn" class="btn btn-outline" target="_blank" rel="noopener">今すぐ購入 — Dark Corporate</a>
-      </div>
     </div>
-
-    <!-- Tech Blue -->
-    <div id="series-tech" class="series-panel">
-      <div class="layout-grid">
-        <div class="layout-cell">
-          <div class="layout-tooltip">プレゼンの表紙。タイトル・日付・発表者名を記載</div>
-          <a href="#" class="layout-thumb-link" onclick="openSeriesLb('tech',0,event)">
-            <img src="images/slides/TB_Cover.png" class="layout-thumb" alt="TB Cover" loading="lazy" />
-          </a>
-          <div class="layout-label">
-            <span class="layout-name-en">Cover</span>
-            <span class="layout-name-jp">（表紙）</span>
-          </div>
-        </div>
-        <div class="layout-cell">
-          <div class="layout-tooltip">章・セクションの区切りページ</div>
-          <a href="#" class="layout-thumb-link" onclick="openSeriesLb('tech',1,event)">
-            <img src="images/slides/TB_Section.png" class="layout-thumb" alt="TB Section" loading="lazy" />
-          </a>
-          <div class="layout-label">
-            <span class="layout-name-en">Section</span>
-            <span class="layout-name-jp">（区切り）</span>
-          </div>
-        </div>
-        <div class="layout-cell">
-          <div class="layout-tooltip">標準コンテンツページ。テキスト・箇条書き最適</div>
-          <a href="#" class="layout-thumb-link" onclick="openSeriesLb('tech',2,event)">
-            <img src="images/slides/TB_Normal.png" class="layout-thumb" alt="TB Normal" loading="lazy" />
-          </a>
-          <div class="layout-label">
-            <span class="layout-name-en">Normal</span>
-            <span class="layout-name-jp">（本文）</span>
-          </div>
-        </div>
-        <div class="layout-cell">
-          <div class="layout-tooltip">図・チャート・フロー図の表示用</div>
-          <a href="#" class="layout-thumb-link" onclick="openSeriesLb('tech',3,event)">
-            <img src="images/slides/TB_Diagram.png" class="layout-thumb" alt="TB Diagram" loading="lazy" />
-          </a>
-          <div class="layout-label">
-            <span class="layout-name-en">Diagram</span>
-            <span class="layout-name-jp">（図解）</span>
-          </div>
-        </div>
-        <div class="layout-cell">
-          <div class="layout-tooltip">重要ポイント・まとめ・強調スライド</div>
-          <a href="#" class="layout-thumb-link" onclick="openSeriesLb('tech',4,event)">
-            <img src="images/slides/TB_Highlight.png" class="layout-thumb" alt="TB Highlight" loading="lazy" />
-          </a>
-          <div class="layout-label">
-            <span class="layout-name-en">Highlight</span>
-            <span class="layout-name-jp">（強調）</span>
-          </div>
-        </div>
-      </div>
-      <div style="padding: 0 clamp(1.5rem, 8vw, 8rem) 1rem;">
-        <a href="https://tashida.gumroad.com/l/zrvyyn" class="btn btn-outline" target="_blank" rel="noopener">今すぐ購入 — Tech Blue</a>
-      </div>
-    </div>
-
-    <!-- Light Minimal -->
-    <div id="series-light" class="series-panel">
-      <div class="layout-grid">
-        <div class="layout-cell">
-          <div class="layout-tooltip">プレゼンの表紙。タイトル・日付・発表者名を記載</div>
-          <a href="#" class="layout-thumb-link" onclick="openSeriesLb('light',0,event)">
-            <img src="images/slides/LM_Cover.png" class="layout-thumb" alt="LM Cover" loading="lazy" />
-          </a>
-          <div class="layout-label">
-            <span class="layout-name-en">Cover</span>
-            <span class="layout-name-jp">（表紙）</span>
-          </div>
-        </div>
-        <div class="layout-cell">
-          <div class="layout-tooltip">章・セクションの区切りページ</div>
-          <a href="#" class="layout-thumb-link" onclick="openSeriesLb('light',1,event)">
-            <img src="images/slides/LM_Section.png" class="layout-thumb" alt="LM Section" loading="lazy" />
-          </a>
-          <div class="layout-label">
-            <span class="layout-name-en">Section</span>
-            <span class="layout-name-jp">（区切り）</span>
-          </div>
-        </div>
-        <div class="layout-cell">
-          <div class="layout-tooltip">標準コンテンツページ。テキスト・箇条書き最適</div>
-          <a href="#" class="layout-thumb-link" onclick="openSeriesLb('light',2,event)">
-            <img src="images/slides/LM_Normal.png" class="layout-thumb" alt="LM Normal" loading="lazy" />
-          </a>
-          <div class="layout-label">
-            <span class="layout-name-en">Normal</span>
-            <span class="layout-name-jp">（本文）</span>
-          </div>
-        </div>
-        <div class="layout-cell">
-          <div class="layout-tooltip">図・チャート・フロー図の表示用</div>
-          <a href="#" class="layout-thumb-link" onclick="openSeriesLb('light',3,event)">
-            <img src="images/slides/LM_Diagram.png" class="layout-thumb" alt="LM Diagram" loading="lazy" />
-          </a>
-          <div class="layout-label">
-            <span class="layout-name-en">Diagram</span>
-            <span class="layout-name-jp">（図解）</span>
-          </div>
-        </div>
-        <div class="layout-cell">
-          <div class="layout-tooltip">重要ポイント・まとめ・強調スライド</div>
-          <a href="#" class="layout-thumb-link" onclick="openSeriesLb('light',4,event)">
-            <img src="images/slides/LM_Highlight.png" class="layout-thumb" alt="LM Highlight" loading="lazy" />
-          </a>
-          <div class="layout-label">
-            <span class="layout-name-en">Highlight</span>
-            <span class="layout-name-jp">（強調）</span>
-          </div>
-        </div>
-      </div>
-      <div style="padding: 0 clamp(1.5rem, 8vw, 8rem) 1rem;">
-        <a href="https://tashida.gumroad.com/l/zrvyyn" class="btn btn-outline" target="_blank" rel="noopener">今すぐ購入 — Light Minimal</a>
-      </div>
-    </div>
-
-    <div class="series-label-row">
-      <span>AI-Slide-Templates（3シリーズ × 5レイアウト）</span>
-      <a href="https://tashida.gumroad.com/l/zrvyyn" class="btn btn-primary" target="_blank" rel="noopener" style="padding:.4rem 1.1rem; font-size:.82rem;">Gumroadで購入</a>
-    </div>
-  </div>
-</section>
-
-<!-- ────────────────── WHAT'S INCLUDED ────────────────── -->
-<section id="whats-included">
-  <div class="fade-in">
-    <p class="section-label">セット内容</p>
-    <h2>すべて含まれています</h2>
-    <div class="section-divider"></div>
-  </div>
-  <div class="fade-in icon-check-grid">
-    <div class="merit-sub-item"><div class="merit-sub-icon">✓</div><p>スライド15枚</p></div>
-    <div class="merit-sub-item"><div class="merit-sub-icon">✓</div><p>テーマ3種</p></div>
-    <div class="merit-sub-item"><div class="merit-sub-icon">✓</div><p>PPTXファイル</p></div>
-    <div class="merit-sub-item"><div class="merit-sub-icon">✓</div><p>PNGプレビュー</p></div>
-    <div class="merit-sub-item"><div class="merit-sub-icon">✓</div><p>ドキュメント</p></div>
-    <div class="merit-sub-item"><div class="merit-sub-icon">✓</div><p>問い合わせ用PDF</p></div>
-    <div class="merit-sub-item"><div class="merit-sub-icon">✓</div><p>無料フォント</p></div>
-  </div>
-  <div class="fade-in" style="margin-top:2.5rem; text-align:center;">
-    <a href="https://tashida.gumroad.com/l/zrvyyn" class="btn btn-primary" target="_blank" rel="noopener">Gumroadで入手</a>
   </div>
 </section>
 
@@ -1136,15 +844,6 @@
         </div>
       </div>
     </div>
-  </div>
-</section>
-
-<!-- ────────────────── GUMROAD CTA（中段） ────────────────── -->
-<section id="gumroad-cta" style="text-align:center;">
-  <div class="fade-in" style="max-width:600px; margin:0 auto;">
-    <h2 style="margin-bottom:1rem;">PowerPoint テンプレートをお探しですか？</h2>
-    <p style="color:var(--text-sub); margin-bottom:2rem;">AI講義・企業研修・技術プレゼン向けに設計された、すぐに使えるプロフェッショナルテンプレート。</p>
-    <a href="https://tashida.gumroad.com/l/zrvyyn" class="btn btn-primary" target="_blank" rel="noopener">Gumroadで購入</a>
   </div>
 </section>
 
@@ -1550,7 +1249,6 @@
   </div>
   <ul style="list-style:none; display:flex; flex-wrap:wrap; gap:1.2rem; font-size:.85rem;">
     <li><a href="#hero" style="color:var(--text-sub); text-decoration:none;">ホーム</a></li>
-    <li><a href="#templates" style="color:var(--text-sub); text-decoration:none;">テンプレート</a></li>
     <li><a href="#services" style="color:var(--text-sub); text-decoration:none;">サービス</a></li>
     <li><a href="#translation" style="color:var(--text-sub); text-decoration:none;">技術翻訳</a></li>
     <li><a href="#contact" style="color:var(--text-sub); text-decoration:none;">お問い合わせ</a></li>
@@ -1562,58 +1260,7 @@
   </div>
 </footer>
 
-<!-- GLightbox JS -->
-<script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
 <script>
-  // ── GLightbox 初期化（プロジェクトギャラリー用） ──
-  const lightbox = GLightbox({
-    selector: '.glightbox',
-    touchNavigation: true,
-    loop: true,
-    autoplayVideos: false,
-    openEffect: 'fade',
-    closeEffect: 'fade'
-  });
-
-  // ── シリーズライトボックス（シリーズごとに完全分離） ──
-  const seriesData = {
-    dark: [
-      { href: 'images/slides/DC_Cover.png',    title: 'Dark Corporate — Cover（表紙）',   description: 'プレゼンの表紙スライド' },
-      { href: 'images/slides/DC_Section.png',  title: 'Dark Corporate — Section（区切り）',description: '章・セクションの区切りページ' },
-      { href: 'images/slides/DC_Normal.png',   title: 'Dark Corporate — Normal（本文）',   description: '標準コンテンツページ' },
-      { href: 'images/slides/DC_Diagram.png',  title: 'Dark Corporate — Diagram（図解）',  description: '図・チャート・フロー図用' },
-      { href: 'images/slides/DC_Highlight.png',title: 'Dark Corporate — Highlight（強調）',description: '重要ポイント・まとめ用' }
-    ],
-    tech: [
-      { href: 'images/slides/TB_Cover.png',    title: 'Tech Blue — Cover（表紙）',   description: 'プレゼンの表紙スライド' },
-      { href: 'images/slides/TB_Section.png',  title: 'Tech Blue — Section（区切り）',description: '章・セクションの区切りページ' },
-      { href: 'images/slides/TB_Normal.png',   title: 'Tech Blue — Normal（本文）',   description: '標準コンテンツページ' },
-      { href: 'images/slides/TB_Diagram.png',  title: 'Tech Blue — Diagram（図解）',  description: '図・チャート・フロー図用' },
-      { href: 'images/slides/TB_Highlight.png',title: 'Tech Blue — Highlight（強調）',description: '重要ポイント・まとめ用' }
-    ],
-    light: [
-      { href: 'images/slides/LM_Cover.png',    title: 'Light Minimal — Cover（表紙）',   description: 'プレゼンの表紙スライド' },
-      { href: 'images/slides/LM_Section.png',  title: 'Light Minimal — Section（区切り）',description: '章・セクションの区切りページ' },
-      { href: 'images/slides/LM_Normal.png',   title: 'Light Minimal — Normal（本文）',   description: '標準コンテンツページ' },
-      { href: 'images/slides/LM_Diagram.png',  title: 'Light Minimal — Diagram（図解）',  description: '図・チャート・フロー図用' },
-      { href: 'images/slides/LM_Highlight.png',title: 'Light Minimal — Highlight（強調）',description: '重要ポイント・まとめ用' }
-    ]
-  };
-
-  let seriesLb = null;
-  function openSeriesLb(series, index, e) {
-    e.preventDefault();
-    if (seriesLb) { seriesLb.destroy(); seriesLb = null; }
-    seriesLb = GLightbox({
-      elements: seriesData[series],
-      touchNavigation: true,
-      loop: true,
-      openEffect: 'fade',
-      closeEffect: 'fade'
-    });
-    seriesLb.openAt(index);
-  }
-
   // ── Contact form ──
   function submitContactForm(e) {
     e.preventDefault();
@@ -1640,51 +1287,6 @@
     form.style.display = 'none';
     document.getElementById('form-success').style.display = 'block';
   }
-
-  // ── シリーズタブ切り替え ──
-  function switchSeries(key) {
-    document.querySelectorAll('.series-tab').forEach(t => t.classList.remove('active'));
-    document.querySelectorAll('.series-panel').forEach(p => p.classList.remove('active'));
-    document.querySelector(`.series-tab[onclick="switchSeries('${key}')"]`).classList.add('active');
-    document.getElementById('series-' + key).classList.add('active');
-  }
-
-  // ── ギャラリー（lightbox連動） ──
-  const galleryCaptions = {
-    gallery1: ['3スタイル比較 — Light Minimal / Dark Corporate / Tech Blue', '全15スライドレイアウト一覧', 'AI講義・企業研修向け使用シーン']
-  };
-  const galleryLbSrcs = {
-    gallery1: ['images/styles_comparison.png', 'images/all_15_slides.png', 'images/usage_scene.png']
-  };
-  const galleryLbTitles = {
-    gallery1: ['3スタイル比較', '全15スライドレイアウト一覧', 'AI講義・企業研修向け使用シーン']
-  };
-
-  function galleryGoto(id, index) {
-    const g = document.getElementById(id);
-    const imgs = g.querySelectorAll('.gallery-img');
-    const dots = g.querySelectorAll('.gallery-dot');
-    imgs.forEach(i => i.classList.remove('active'));
-    dots.forEach(d => d.classList.remove('active'));
-    imgs[index].classList.add('active');
-    dots[index].classList.add('active');
-    const cap = document.getElementById(id + '-caption');
-    if (cap && galleryCaptions[id]) cap.textContent = galleryCaptions[id][index];
-    // lightboxリンクのhrefを現在スライドに同期
-    const lb = document.getElementById(id + '-lb');
-    if (lb && galleryLbSrcs[id]) {
-      lb.href = galleryLbSrcs[id][index];
-      lb.setAttribute('data-title', galleryLbTitles[id][index]);
-      lightbox.reload();
-    }
-  }
-  function galleryNav(id, dir) {
-    const g = document.getElementById(id);
-    const imgs = g.querySelectorAll('.gallery-img');
-    let cur = [...imgs].findIndex(i => i.classList.contains('active'));
-    galleryGoto(id, (cur + dir + imgs.length) % imgs.length);
-  }
-  setInterval(() => galleryNav('gallery1', 1), 4500);
 
   // ── Fade-in on scroll ──
   const observer = new IntersectionObserver(
