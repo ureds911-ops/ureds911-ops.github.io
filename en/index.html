@@ -1198,7 +1198,9 @@
       <p style="color:var(--text-main); font-weight:600;">Contact me.</p>
     </div>
     <p>Feel free to reach out, even just to discuss your project.<br>Available flexibly on weekdays and weekends — I typically reply within 24 hours.</p>
-    <form id="contact-form" class="contact-form" onsubmit="submitContactForm(event)" novalidate>
+    <form id="contact-form" class="contact-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" onsubmit="submitContactForm(event)" novalidate>
+      <input type="hidden" name="form-name" value="contact" />
+      <p style="display:none;"><label>Leave this field blank: <input name="bot-field" /></label></p>
       <div class="form-group">
         <label for="cf-name">Name<span class="form-label-opt">(optional)</span></label>
         <input type="text" id="cf-name" name="name" placeholder="e.g. John Smith" autocomplete="name" />
@@ -1216,10 +1218,10 @@
         <textarea id="cf-message" name="message" rows="6" placeholder="Please describe your request or question" required></textarea>
       </div>
       <button type="submit" class="btn btn-primary form-submit">📨 Send</button>
-      <p class="form-notice">Clicking Send will open your email app. Please send the message from there.</p>
+      <p class="form-notice">Clicking Send will submit your message directly.</p>
     </form>
     <div id="form-success" class="form-success">
-      Your email app has opened.<br>Please go ahead and send the message.<br>
+      Message sent. Thank you for reaching out.<br>
       <span style="font-size:.85rem; color:var(--text-sub);">I typically reply within 24 hours.</span>
     </div>
     <div class="contact-links">
@@ -1267,14 +1269,28 @@
       ta.focus(); ta.style.borderColor = '#ff4d6d';
       setTimeout(() => ta.style.borderColor = '', 1800); return;
     }
-    const to   = 't-ashida@syd.odn.ne.jp';
-    const subj = subject || 'Inquiry from Portfolio Website';
-    const body = (name ? `Name: ${name}\n` : '') +
-                 `Email: ${email.value}\n\n${message}`;
-    window.location.href =
-      `mailto:${to}?subject=${encodeURIComponent(subj)}&body=${encodeURIComponent(body)}`;
-    form.style.display = 'none';
-    document.getElementById('form-success').style.display = 'block';
+    const submitBtn = form.querySelector('.form-submit');
+    submitBtn.disabled = true;
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: new URLSearchParams(new FormData(form)).toString()
+    })
+      .then((res) => { if (!res.ok) throw new Error('form submission failed'); })
+      .catch(() => {
+        // Fallback for hosts without Netlify Forms (e.g. GitHub Pages)
+        const to   = 't-ashida@syd.odn.ne.jp';
+        const subj = subject || 'Inquiry from Portfolio Website';
+        const body = (name ? `Name: ${name}\n` : '') +
+                     `Email: ${email.value}\n\n${message}`;
+        window.location.href =
+          `mailto:${to}?subject=${encodeURIComponent(subj)}&body=${encodeURIComponent(body)}`;
+      })
+      .finally(() => {
+        submitBtn.disabled = false;
+        form.style.display = 'none';
+        document.getElementById('form-success').style.display = 'block';
+      });
   }
 
   // ── Fade-in on scroll ──

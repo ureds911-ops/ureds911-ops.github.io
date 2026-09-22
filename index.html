@@ -1209,7 +1209,9 @@
       <p style="color:var(--text-main); font-weight:600;">Contact me.</p>
     </div>
     <p>ご相談ベースでも構いません。<br>平日・土日ともに柔軟に対応可能で、メッセージは原則 24 時間以内にご返信いたします。</p>
-    <form id="contact-form" class="contact-form" onsubmit="submitContactForm(event)" novalidate>
+    <form id="contact-form" class="contact-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" onsubmit="submitContactForm(event)" novalidate>
+      <input type="hidden" name="form-name" value="contact" />
+      <p style="display:none;"><label>他の入力欄は使用しないでください: <input name="bot-field" /></label></p>
       <div class="form-group">
         <label for="cf-name">お名前<span class="form-label-opt">（任意）</span></label>
         <input type="text" id="cf-name" name="name" placeholder="例：山田 太郎" autocomplete="name" />
@@ -1227,10 +1229,10 @@
         <textarea id="cf-message" name="message" rows="6" placeholder="ご依頼内容・ご相談内容をご記入ください" required></textarea>
       </div>
       <button type="submit" class="btn btn-primary form-submit">📨 送信する</button>
-      <p class="form-notice">送信ボタンを押すとメールアプリが開きます。そのまま送信してください。</p>
+      <p class="form-notice">送信ボタンを押すと、このままメッセージが送信されます。</p>
     </form>
     <div id="form-success" class="form-success">
-      メールアプリが開きました。<br>そのまま送信をお願いいたします。<br>
+      送信しました。お問い合わせありがとうございます。<br>
       <span style="font-size:.85rem; color:var(--text-sub);">返信まで原則 24 時間以内にご連絡いたします。</span>
     </div>
     <div class="contact-links">
@@ -1278,14 +1280,28 @@
       ta.focus(); ta.style.borderColor = '#ff4d6d';
       setTimeout(() => ta.style.borderColor = '', 1800); return;
     }
-    const to   = 't-ashida@syd.odn.ne.jp';
-    const subj = subject || 'ポートフォリオからのお問い合わせ';
-    const body = (name ? `お名前: ${name}\n` : '') +
-                 `メールアドレス: ${email.value}\n\n${message}`;
-    window.location.href =
-      `mailto:${to}?subject=${encodeURIComponent(subj)}&body=${encodeURIComponent(body)}`;
-    form.style.display = 'none';
-    document.getElementById('form-success').style.display = 'block';
+    const submitBtn = form.querySelector('.form-submit');
+    submitBtn.disabled = true;
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: new URLSearchParams(new FormData(form)).toString()
+    })
+      .then((res) => { if (!res.ok) throw new Error('form submission failed'); })
+      .catch(() => {
+        // Fallback for hosts without Netlify Forms (e.g. GitHub Pages)
+        const to   = 't-ashida@syd.odn.ne.jp';
+        const subj = subject || 'ポートフォリオからのお問い合わせ';
+        const body = (name ? `お名前: ${name}\n` : '') +
+                     `メールアドレス: ${email.value}\n\n${message}`;
+        window.location.href =
+          `mailto:${to}?subject=${encodeURIComponent(subj)}&body=${encodeURIComponent(body)}`;
+      })
+      .finally(() => {
+        submitBtn.disabled = false;
+        form.style.display = 'none';
+        document.getElementById('form-success').style.display = 'block';
+      });
   }
 
   // ── Fade-in on scroll ──
