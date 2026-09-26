@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>tashida | AIを活用できるベテラン技術コンサルタント</title>
-  <meta name="description" content="水力発電・ISO9001・技術翻訳の専門家がAIを活用。フリーランス受注16年、技術専門知識×AIで他では得られないアウトプットをご提供。" />
+  <title>tashida | AIクリエイター × 技術コンサルタント</title>
+  <meta name="description" content="AIを活用した画像・Web/LP・PowerPoint・コンテンツ制作。水力発電・ISO9001・技術翻訳の実務経験を背景に、実際に使える成果物を制作します。" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
@@ -670,7 +670,30 @@
       .layout-grid { grid-template-columns: 1fr 1fr; }
       .layout-grid .layout-cell:nth-child(n+4) { display: block; }
     }
-  </style>
+  
+    /* ── AI でできること（新設） ── */
+    #ai-do { background: var(--bg-mid); }
+    .ai-do-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.2rem; }
+    @media (max-width: 600px) { .ai-do-grid { grid-template-columns: 1fr; } }
+
+    /* ── WORKS / 制作実績（新設） ── */
+    #works { background: var(--bg-deep); }
+    .works-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; }
+    @media (max-width: 700px) { .works-grid { grid-template-columns: 1fr; } }
+    .work-img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .before-after { display: flex; height: 100%; }
+    .before-after > div { flex: 1; position: relative; overflow: hidden; }
+    .before-after > div:first-child { border-right: 1px solid var(--border); }
+    .before-after img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .ba-label {
+      position: absolute; bottom: 8px; left: 8px; z-index: 2;
+      background: rgba(6,13,26,.75); color: var(--text-main);
+      font-size: .68rem; padding: .15rem .55rem; border-radius: .3rem; letter-spacing: .06em;
+    }
+
+    /* ── PROFESSIONAL BACKGROUND（新設） ── */
+    #background { background: var(--bg-mid); }
+</style>
 </head>
 <body>
 
@@ -679,11 +702,12 @@
   <span class="nav-logo">tashida</span>
   <ul class="nav-links">
     <li><a href="#hero">ホーム</a></li>
-    <li><a href="#merit">選ばれる理由</a></li>
-    <li><a href="#services">サービス</a></li>
-    <li><a href="#translation">技術翻訳</a></li>
+    <li><a href="#ai-do">できること</a></li>
+    <li><a href="#works">制作実績</a></li>
+    <li><a href="#skills">スキル</a></li>
+    <li><a href="#ai-expertise">AI×専門性</a></li>
+    <li><a href="#background">実績・経歴</a></li>
     <li><a href="#about">プロフィール</a></li>
-    <li><a href="#ai-expertise">AI活用事例</a></li>
     <li><a href="#contact">お問い合わせ</a></li>
   </ul>
   <div class="lang-switch">
@@ -698,352 +722,170 @@
   <div class="hero-grid"></div>
   <div class="hero-content fade-in">
     <div class="hero-badge">
-      <span></span>フリーランス受注16年 ｜ AIを活用できるベテラン技術コンサルタント
+      <span></span>フリーランス16年 ｜ AI活用クリエイター &amp; 技術コンサルタント
     </div>
     <h1><span class="name">tashida</span></h1>
     <p class="hero-sub">
-      <span>技術専門知識 × AI で、他では得られないアウトプットをご提供します。</span>
-      <span>水力発電 / ISO9001 / 技術翻訳 × AI活用の組み合わせが強みです。</span>
+      <span>AIを活用して、画像・Web/LP・プレゼンテーション・業務コンテンツを制作します。</span>
+      <span>長年の技術・品質管理・翻訳実務経験と組み合わせ、「実際に使える成果物」をつくります。</span>
     </p>
     <div class="hero-tags">
-      <span class="tag">AI業務支援</span>
-      <span class="tag">PPT テンプレート設計</span>
-      <span class="tag">ISO9001 コンサルティング</span>
-      <span class="tag">水力発電 技術翻訳</span>
+      <span class="tag">AI画像制作</span>
+      <span class="tag">Web・LP制作</span>
+      <span class="tag">PowerPoint</span>
+      <span class="tag">AIコンテンツ制作</span>
     </div>
     <div class="hero-cta">
-      <a href="#ai-expertise" class="btn btn-primary">実績を見る</a>
+      <a href="#works" class="btn btn-primary">制作実績を見る</a>
       <a href="#contact" class="btn btn-outline">お問い合わせ</a>
     </div>
-    <div class="hero-reasons">
-      <p class="reasons-title">Why tashida ── 選ばれる２つの理由</p>
-      <div class="reasons-grid">
-        <div class="reason-card">
-          <div class="reason-num">01</div>
-          <div>
-            <strong>現在もAIスキルを活用して業務サポート継続中</strong>
-            <p>業務サポート継続中のクライアント様社内で、AIスキルを活用してホームページ見直し・研修資料作成・ISO9001 内部監査／外部審査対応を推進中。</p>
-          </div>
-        </div>
-        <div class="reason-card">
-          <div class="reason-num">02</div>
-          <div>
-            <strong>フリーランス受注16年の実績</strong>
-            <ul>
-              <li>① 水力発電機 固定子・回転子の組立・据付に関する技術文書の英日翻訳受注多数（2023〜2026年：110件 / 194,000語）</li>
-              <li>② ISO9001:2015に基づく品質マネジメントシステム導入コンサルティングおよび11年間の運用実績</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
   </div>
 </section>
 
-<!-- ────────────────── WHY TASHIDA（#1: 選ばれる２つの理由 詳細） ────────────────── -->
-<section id="merit">
+<!-- ────────────────── AI でできること ────────────────── -->
+<section id="ai-do">
   <div class="fade-in">
-    <p class="section-label">Why tashida</p>
-    <h2>ご依頼いただくメリット ── 選ばれる２つの理由</h2>
+    <p class="section-label">What I Can Do</p>
+    <h2>AIを活用してできること</h2>
     <div class="section-divider"></div>
   </div>
-  <div class="merit-reasons">
-    <div class="merit-reason-card fade-in">
-      <div class="merit-reason-num">01</div>
-      <h3>現在もAIスキルを活用して<br>業務サポート継続中</h3>
-      <div class="merit-sub-list">
-        <div class="merit-sub-item">
-          <div class="merit-sub-icon">✓</div>
-          <p>業務サポート継続中のクライアント様社内で、<strong>AIスキルを活用したホームページ見直し</strong>を推進中。</p>
-        </div>
-        <div class="merit-sub-item">
-          <div class="merit-sub-icon">✓</div>
-          <p>同クライアント様の<strong>研修資料作成・ISO9001 内部監査／外部審査対応</strong>にもAIを積極的に活用。</p>
-        </div>
-        <div class="merit-sub-item">
-          <div class="merit-sub-icon">✓</div>
-          <p>「AIを使えます」だけでなく、<strong>専門知識をAIで実務成果物に変換できる</strong>希少なコンサルタントです。</p>
-        </div>
-      </div>
-    </div>
-    <div class="merit-reason-card fade-in">
-      <div class="merit-reason-num">02</div>
-      <h3>フリーランスとして<br>クライアントワーク受注16年の実績</h3>
-      <div class="merit-sub-list">
-        <div class="merit-sub-item">
-          <div class="merit-sub-icon">①</div>
-          <p>水力発電機 固定子・回転子の組立・据付・試験に関する技術文書の英日翻訳を多数受注。2023〜2026年の4年間で<strong>110件 / 約194,000語</strong>。
-          <br><a href="files/translation-summary.pdf" target="_blank" rel="noopener">→ 翻訳実績サマリー（PDF）</a></p>
-        </div>
-        <div class="merit-sub-item">
-          <div class="merit-sub-icon">②</div>
-          <p>クライアント様に対する <strong>ISO9001:2015</strong> に基づく品質マネジメントシステム導入コンサルティングおよび<strong>11年間</strong>にわたる同システムの継続運用実績あり。</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ────────────────── SKILLS ────────────────── -->
-<section id="skills">
-  <div class="fade-in">
-    <p class="section-label">Skills &amp; Tools</p>
-    <h2>スキル・使用ツール</h2>
-    <div class="section-divider"></div>
-  </div>
-  <div class="skills-layout">
-    <div class="fade-in">
-      <div class="skill-group">
-        <h3>CORE SKILLS</h3>
-        <div class="skill-list">
-          <div class="skill-item">
-            <span class="skill-name">AI 画像生成・コンテンツ制作</span>
-            <div class="skill-bar-wrap"><div class="skill-bar" style="width:85%"></div></div>
-          </div>
-          <div class="skill-item">
-            <span class="skill-name">AI活用 技術文書作成</span>
-            <div class="skill-bar-wrap"><div class="skill-bar" style="width:90%"></div></div>
-          </div>
-          <div class="skill-item">
-            <span class="skill-name">PowerPoint スライドマスター設計</span>
-            <div class="skill-bar-wrap"><div class="skill-bar" style="width:88%"></div></div>
-          </div>
-          <div class="skill-item">
-            <span class="skill-name">水力発電 技術翻訳（英日・日英）</span>
-            <div class="skill-bar-wrap"><div class="skill-bar" style="width:95%"></div></div>
-          </div>
-          <div class="skill-item">
-            <span class="skill-name">ISO9001:2015 QMS 運用支援</span>
-            <div class="skill-bar-wrap"><div class="skill-bar" style="width:93%"></div></div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="fade-in">
-      <div class="skill-group">
-        <h3>TOOLS</h3>
-        <div class="tools-grid">
-          <div class="tool-card">
-            <div class="tool-cat">AI CHAT</div>
-            <div class="tool-list">ChatGPT<br>Claude<br>Gemini</div>
-          </div>
-          <div class="tool-card">
-            <div class="tool-cat">AGENT AI</div>
-            <div class="tool-list">Claude Code<br>Claude Cowork<br>Codex</div>
-          </div>
-          <div class="tool-card">
-            <div class="tool-cat">AI IMAGE</div>
-            <div class="tool-list">Gemini（Nano Banana）<br>ChatGPT（GPT Image）</div>
-          </div>
-          <div class="tool-card">
-            <div class="tool-cat">DOCUMENT</div>
-            <div class="tool-list">PowerPoint<br>スライドマスター設計<br>Excel / Word</div>
-          </div>
-          <div class="tool-card" style="grid-column: 1 / -1;">
-            <div class="tool-cat">SALES PLATFORM</div>
-            <div class="tool-list">Gumroad（デジタル作品出品：<a href="https://tashida.gumroad.com" target="_blank" rel="noopener">https://tashida.gumroad.com</a>）</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ────────────────── SERVICES ────────────────── -->
-<section id="services">
-  <div class="fade-in">
-    <p class="section-label">Services</p>
-    <h2>対応可能な業務</h2>
-    <div class="section-divider"></div>
-  </div>
-  <div class="services-grid">
-    <!-- PowerPointテンプレート販売（NEW: 最優先） -->
+  <div class="ai-do-grid">
     <div class="service-card fade-in">
-      <div class="service-icon">🛒</div>
-      <h3>PowerPoint テンプレート販売</h3>
-      <p>AI講義・企業研修・教育機関向けPowerPointテンプレートをGumroadにて販売中。3テーマ×5レイアウト、即利用可能です。</p>
-      <a href="https://tashida.gumroad.com/l/zrvyyn" class="btn btn-outline" target="_blank" rel="noopener" style="margin-top:1rem; display:inline-block; padding:.5rem 1.2rem; font-size:.85rem;">Gumroadで見る</a>
+      <div class="service-icon">🖼️</div>
+      <h3>AI画像制作・編集</h3>
+      <p>商品画像、Web/SNS画像、プレゼンテーション用素材、既存画像の修正など。</p>
     </div>
-    <!-- 専門技術 -->
     <div class="service-card fade-in">
       <div class="service-icon">🌐</div>
-      <h3>日英・英日 技術翻訳</h3>
-      <p>水力発電設備（固定子・回転子・タービン・発電機）の技術文書を中心に、電気・通信・IT 分野の翻訳に対応。AI活用による効率化と専門用語の正確性を両立します。</p>
-    </div>
-    <div class="service-card fade-in">
-      <div class="service-icon">📋</div>
-      <h3>ISO9001 品質マネジメント支援</h3>
-      <p>ISO9001:2015に基づくQMS導入コンサルティング・内部監査支援・外部審査対応。11年間の継続運用サポート実績をもとにAIを活用した効率的な運用を支援します。</p>
-    </div>
-    <!-- AI活用の業務 -->
-    <div class="service-card fade-in service-card--image">
-      <div class="service-icon">🖼️</div>
-      <h3>AI 画像生成</h3>
-      <p>ChatGPT（GPT Image）・Gemini（Nano Banana）を活用した高品質なAI画像生成。背景・アイキャッチ・テンプレート素材に対応。</p>
+      <h3>Webサイト・LP制作</h3>
+      <p>商品・サービス紹介LP、ポートフォリオ、Webページ制作。GitHub / Netlifyによる公開にも対応。</p>
     </div>
     <div class="service-card fade-in">
       <div class="service-icon">📊</div>
-      <h3>PowerPoint テンプレート設計</h3>
-      <p>スライドマスターを活用した背景・テンプレート設計。AI講義・企業研修・教育機関向けに最適化した再利用性の高い資料を制作します。</p>
+      <h3>PowerPoint・プレゼンテーション制作</h3>
+      <p>プレゼンテーション、研修資料、テンプレート、スライドマスター制作。</p>
     </div>
-    <div class="service-card fade-in">
-      <div class="service-icon">🎓</div>
-      <div class="service-new">NEW</div>
-      <h3>研修・講義向けテンプレート制作</h3>
-      <p>AI講義・企業研修向けPowerPointテンプレートの制作・販売。専門用途に最適化した設計です（Gumroad出品中）。</p>
-    </div>
-    <div class="service-card fade-in">
-      <div class="service-icon">🔍</div>
-      <h3>リサーチ・要約業務</h3>
-      <p>目的に合わせた情報収集・整理・要約。技術分野の専門的なリサーチにも対応します。</p>
-    </div>
-    <div class="service-card fade-in">
-      <div class="service-icon">🔧</div>
-      <h3>AI活用 技術コンサルティング</h3>
-      <p>水力発電・ISO9001・海外プロジェクトの専門知識をベースにAIを活用。リスクアセスメント・NCR処理・据付手順書等の高品質な技術文書を作成します。</p>
-    </div>
-    <!-- Technical Writing（最後） -->
     <div class="service-card fade-in">
       <div class="service-icon">✍️</div>
-      <h3>AI活用 文章作成・コンテンツ制作</h3>
-      <p>記事・研修資料・マニュアル・説明文書など、専門知識を活かした高品質なテキストコンテンツを制作します。一般的なAI利用との質的な差別化が可能です。</p>
+      <h3>AIコンテンツ制作</h3>
+      <p>記事、マニュアル、説明資料、技術資料、リサーチ・要約など。</p>
     </div>
   </div>
 </section>
 
-<!-- ────────────────── TRANSLATION PORTFOLIO ────────────────── -->
-<section id="translation">
+<!-- ────────────────── WORKS / 制作実績 ────────────────── -->
+<section id="works">
   <div class="fade-in">
-    <p class="section-label">Translation Portfolio</p>
-    <h2>翻訳実績</h2>
+    <p class="section-label">Works</p>
+    <h2>制作実績</h2>
     <div class="section-divider"></div>
   </div>
-  <div class="project-card fade-in" style="max-width:900px;">
-    <div class="project-visual theme-tech">
-      <div style="text-align:center; padding:1rem;">
-        <div style="font-size:.75rem; color:#8aa4c8; letter-spacing:.1em; margin-bottom:.6rem;">TECHNICAL TRANSLATION</div>
-        <div style="display:flex; align-items:center; gap:.75rem; font-size:1.1rem; font-weight:600; justify-content:center;">
-          <span>日本語</span>
-          <span style="color:#3b9eff; font-size:1.4rem;">⇄</span>
-          <span>English</span>
+  <p class="ai-compare-intro fade-in">実際に手がけた制作物の一部をご紹介します。</p>
+
+  <div class="works-grid">
+
+    <div class="project-card fade-in">
+      <div class="project-visual">
+        <img class="work-img" src="images/styles_comparison.png" alt="PowerPointテンプレート 3スタイル比較" />
+      </div>
+      <div class="project-body">
+        <div class="project-tags">
+          <span class="ptag">PowerPoint</span>
+          <span class="ptag">AI画像生成</span>
+          <span class="ptag">スライドマスター</span>
         </div>
-        <div style="display:flex; gap:1.5rem; justify-content:center; margin-top:.9rem;">
-          <div style="text-align:center;">
-            <div style="font-size:1.8rem; font-weight:700; background:var(--grad); -webkit-background-clip:text; -webkit-text-fill-color:transparent;">110件</div>
-            <div style="font-size:.7rem; color:#8aa4c8;">2023〜2026</div>
-          </div>
-          <div style="text-align:center;">
-            <div style="font-size:1.8rem; font-weight:700; background:var(--grad); -webkit-background-clip:text; -webkit-text-fill-color:transparent;">194,000語</div>
-            <div style="font-size:.7rem; color:#8aa4c8;">総翻訳語数</div>
-          </div>
-        </div>
+        <h3>AI画像背景 × PowerPointテンプレート制作</h3>
+        <p>AI画像生成で制作した背景をスライドマスターに組み込んだ、AI講義・企業研修向けテンプレート。3テーマ×5レイアウト、全15スライド。</p>
+        <a href="https://tashida.gumroad.com/l/zrvyyn" class="btn btn-outline" target="_blank" rel="noopener" style="margin-top:1rem; display:inline-block; padding:.5rem 1.2rem; font-size:.85rem;">Gumroadで見る</a>
       </div>
     </div>
-    <div class="project-body">
-      <div class="project-tags">
-        <span class="ptag">英日・日英翻訳</span>
-        <span class="ptag">水力発電</span>
-        <span class="ptag">技術文書</span>
-        <span class="ptag">AI活用</span>
+
+    <div class="project-card fade-in">
+      <div class="project-visual">
+        <img class="work-img" src="images/work_lp.png" alt="PowerPointテンプレート販売用ランディングページ" />
       </div>
-      <h3>日英・英日技術翻訳（水力発電設備専門）</h3>
-      <p>水力発電機 固定子・回転子の組立・据付・試験に関する技術文書の英日翻訳を中心に、2023〜2026年の4年間で110件 / 約194,000語を受注。</p>
-      <div class="translation-record">
-        <div class="trans-stats">
-          <span class="trans-stat">合計 <strong>110件</strong></span>
-          <span class="trans-stat">英日 <strong>98件</strong></span>
-          <span class="trans-stat">日英 <strong>12件</strong></span>
-          <span class="trans-stat">総語数 <strong>約194,000語</strong></span>
-          <span class="trans-stat">対象 <strong>5発電所</strong></span>
+      <div class="project-body">
+        <div class="project-tags">
+          <span class="ptag">Web制作</span>
+          <span class="ptag">Claude Code</span>
+          <span class="ptag">GitHub / Netlify</span>
         </div>
-        <div class="trans-table-wrap">
-          <table class="trans-table">
-            <thead>
-              <tr>
-                <th>年度</th><th>発電所</th><th>種別</th><th>件数</th><th>語数</th><th>主な文書</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr><td>2023</td><td>N発電所</td><td class="ej">英日</td><td>33</td><td>34,672</td><td>強度計算書、ITP、油圧パワーユニット設計メモ</td></tr>
-              <tr><td>2023</td><td>O発電所</td><td class="je">日英</td><td>9</td><td>41,993</td><td>水車据付仕様書、固定子据付・試験要領書</td></tr>
-              <tr><td>2023</td><td>S発電所</td><td class="ej">英日</td><td>3</td><td>9,494</td><td>ランナー計算書、タービンシャフト強度計算書</td></tr>
-              <tr><td>2024</td><td>I発電所</td><td class="ej">英日</td><td>8</td><td>11,320</td><td>発電機基礎荷重特性報告書、ITP発電機パッケージ</td></tr>
-              <tr><td>2024</td><td>N・S・T発電所</td><td class="ej">英日</td><td>9</td><td>17,369</td><td>立軸発電機据付プロトコル、試験手順書</td></tr>
-              <tr><td>2025</td><td>I・T発電所</td><td class="ej">英日</td><td>8</td><td>10,891</td><td>カプランランナー計算書、翼FEA報告書</td></tr>
-              <tr><td>2026</td><td>N発電所</td><td class="je">日英</td><td>2</td><td>15,167</td><td>現地試験要領書（発電機有水無水試験）</td></tr>
-              <tr><td>2026</td><td>N・S発電所</td><td class="ej">英日</td><td>28</td><td>35,349</td><td>As-Built図面、発電機試験・コミッショニング文書</td></tr>
-            </tbody>
-          </table>
-        </div>
-        <a href="files/translation-summary.pdf" class="trans-pdf-link" target="_blank" rel="noopener">
-          📄 翻訳実績サマリー（PDF）を見る
-        </a>
+        <h3>PowerPointテンプレート販売用 LP制作</h3>
+        <p>Gumroad販売ページへ誘導するランディングページを設計・制作。Claude Codeを活用してHTML/CSSで実装し、GitHub / Netlifyで公開。</p>
+        <a href="templates-lp.html" class="btn btn-outline" target="_blank" rel="noopener" style="margin-top:1rem; display:inline-block; padding:.5rem 1.2rem; font-size:.85rem;">実際のLPを見る</a>
       </div>
     </div>
+
+    <div class="project-card fade-in">
+      <div class="project-visual">
+        <div class="before-after">
+          <div><img src="images/ai_image_before.png" alt="AI生成テンプレート（編集前）" /><span class="ba-label">BEFORE</span></div>
+          <div><img src="images/ai_image_after.png" alt="AI生成テンプレート（編集後）" /><span class="ba-label">AFTER</span></div>
+        </div>
+      </div>
+      <div class="project-body">
+        <div class="project-tags">
+          <span class="ptag">AI画像生成</span>
+          <span class="ptag">画像編集</span>
+          <span class="ptag">ChatGPT・Gemini</span>
+        </div>
+        <h3>AI画像生成 × テンプレート編集（Before / After）</h3>
+        <p>AI生成した背景・装飾に、実際のイベント情報を組み込んで仕上げた例。空のテンプレートから、そのまま使える告知物へ。</p>
+      </div>
+    </div>
+
+    <div class="project-card fade-in">
+      <div class="project-visual">
+        <img class="work-img" src="images/work_portfolio_site.png" alt="このポートフォリオサイト" />
+      </div>
+      <div class="project-body">
+        <div class="project-tags">
+          <span class="ptag">Claude Code</span>
+          <span class="ptag">HTML・CSS</span>
+          <span class="ptag">GitHub / Netlify</span>
+        </div>
+        <h3>このポートフォリオサイト</h3>
+        <p>AIを活用して設計・制作したポートフォリオサイトです。企画・構成・デザイン・実装・公開までを一貫して手がけました。</p>
+        <a href="https://github.com/ureds911-ops/ureds911-ops.github.io" class="btn btn-outline" target="_blank" rel="noopener" style="margin-top:1rem; display:inline-block; padding:.5rem 1.2rem; font-size:.85rem;">GitHubでコードを見る</a>
+      </div>
+    </div>
+
   </div>
 </section>
 
-<!-- ────────────────── ABOUT ────────────────── -->
-<section id="about">
-  <div class="about-grid">
-    <div class="about-text fade-in">
-      <p class="section-label">About</p>
-      <h2>はじめまして。<br>tashida と申します。</h2>
-      <div class="section-divider"></div>
-      <p>電気・通信・水力発電分野の品質保証・技術サポート、および日英技術翻訳に16年従事。<strong style="color:var(--accent2)">「AIに専門知識を与えて高品質な成果物に変換できる」</strong>ことが最大の強みです。</p>
-    </div>
-    <div class="about-highlights fade-in">
-      <div class="highlight-card">
-        <div class="number">16年</div>
-        <p>フリーランス実績</p>
-      </div>
-      <div class="highlight-card">
-        <div class="number">110件</div>
-        <p>翻訳実績</p>
-      </div>
-      <div class="highlight-card">
-        <div class="number">ISO9001</div>
-        <p>QMSコンサル</p>
-      </div>
-      <div class="highlight-card">
-        <div class="number">水力発電</div>
-        <p>専門分野</p>
-      </div>
-      <div class="highlight-card">
-        <div class="number">AI</div>
-        <p>業務活用</p>
-      </div>
-    </div>
+<!-- ────────────────── SKILLS & TOOLS ────────────────── -->
+<section id="skills">
+  <div class="fade-in">
+    <p class="section-label">Skills &amp; Tools</p>
+    <h2>できること と 使用ツール</h2>
+    <div class="section-divider"></div>
+  </div>
+  <div class="fade-in trans-table-wrap">
+    <table class="trans-table">
+      <thead>
+        <tr><th>制作分野</th><th>できること</th><th>使用ツール例</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>AI画像</td><td>生成・編集・素材制作</td><td>ChatGPT / Gemini</td></tr>
+        <tr><td>Web・LP</td><td>LP、Webページ制作</td><td>Claude Code / VS Code</td></tr>
+        <tr><td>Web公開</td><td>コード管理・デプロイ</td><td>GitHub / Netlify</td></tr>
+        <tr><td>プレゼン</td><td>スライド・テンプレート</td><td>PowerPoint / AI</td></tr>
+        <tr><td>コンテンツ</td><td>文書・資料・リサーチ</td><td>ChatGPT / Claude / Gemini</td></tr>
+      </tbody>
+    </table>
   </div>
 </section>
 
-<!-- ────────────────── PHILOSOPHY ────────────────── -->
-<section id="philosophy">
-  <div class="philosophy-inner fade-in">
-    <p class="section-label">Philosophy</p>
-    <h2>仕事への想い</h2>
-    <div class="section-divider" style="margin: 0 auto 2rem;"></div>
-    <blockquote>
-      AI は業務効率化の手段であると同時に、アウトプットの質を高める重要なツールです。<br><br>
-      ただし、AIが生み出す成果物の質は、使い手の専門知識と問題分解能力に左右されます。
-      35年以上の技術者経験で培った水力発電・ISO9001・海外プロジェクトの知識を
-      AIに与えることで、初めて「他では得られない」アウトプットが生まれると考えています。<br><br>
-      一つひとつのご依頼に丁寧に向き合い、長期的なパートナーとしてお付き合いできれば幸いです。
-    </blockquote>
-  </div>
-</section>
-
-<!-- ────────────────── AI × EXPERTISE ────────────────── -->
+<!-- ────────────────── AI × PROFESSIONAL EXPERTISE ────────────────── -->
 <section id="ai-expertise">
   <div class="fade-in">
-    <p class="section-label">AI × Expertise</p>
-    <h2>「AIを使える人」と<br>「AIで専門知識を成果物に変換できる人」の違い</h2>
+    <p class="section-label">AI × Professional Expertise</p>
+    <h2>実務経験が、AI制作の質を左右する</h2>
     <div class="section-divider"></div>
   </div>
   <p class="ai-compare-intro fade-in">
-    現在は誰でも ChatGPT でそれなりの文章が作れます。「AI を使えます」だけでは差別化になりません。
-    水力発電設備・ISO9001・海外プロジェクト等の深い専門知識を持つ人間がAIに文脈を与えることで、
-    初めて実務レベルの成果物が生まれます。
+    現在もクライアント様の業務サポートの中で、AIを活用したホームページ見直しや研修資料作成、ISO9001 内部監査対応などを継続しています。
+    誰でもAIを使える時代だからこそ、専門知識をAIに与えられるかどうかで成果物の質は大きく変わります。
   </p>
 
   <div class="project-card fade-in" style="margin-bottom:2rem;">
@@ -1086,36 +928,10 @@
 
   <div class="ai-compare-grid">
 
-    <!-- Case 1: ISO9001 NCR -->
+    <!-- 技術報告書（水力発電） -->
     <div class="ai-case fade-in">
       <div class="ai-case-header">
-        <div class="ai-case-num">CASE 01</div>
-        <div class="ai-case-title">ISO9001 不適合報告書（NCR）</div>
-      </div>
-      <div class="ai-pair">
-        <div class="ai-side general">
-          <span class="ai-side-label">一般AI出力</span>
-          <div class="ai-prompt">ISO9001の不適合報告書を書いて</div>
-          <div class="ai-result">
-            <span class="ai-result-tag bad">抽象的</span><br>
-            作業手順が守られていませんでした。原因を調査し再発防止に努めます。
-          </div>
-        </div>
-        <div class="ai-side expert">
-          <span class="ai-side-label">専門知識 × AI</span>
-          <div class="ai-prompt">海外水力発電工事において、ウィケットゲートスロットル穴径が図面要求より小さかった。工程への影響を評価しNCRとして処理する。</div>
-          <div class="ai-result-en">
-            <span class="ai-result-tag good">実務レベル</span><br>
-            During inspection of the wicket gate assembly, it was identified that the throttle bore diameter was smaller than the value specified on drawing XXX. Engineering assessment confirmed that the deviation has no adverse effect on hydraulic performance, mechanical integrity, or operating reliability.
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Case 2: 技術報告書 -->
-    <div class="ai-case fade-in">
-      <div class="ai-case-header">
-        <div class="ai-case-num">CASE 02</div>
+        <div class="ai-case-num">CASE</div>
         <div class="ai-case-title">技術報告書（水力発電・最も差別化しやすい）</div>
       </div>
       <div class="ai-pair">
@@ -1138,64 +954,69 @@
       </div>
     </div>
 
-    <!-- Case 3: 工事手順書 -->
-    <div class="ai-case fade-in">
-      <div class="ai-case-header">
-        <div class="ai-case-num">CASE 03</div>
-        <div class="ai-case-title">工事手順書（発電機据付）</div>
-      </div>
-      <div class="ai-pair">
-        <div class="ai-side general">
-          <span class="ai-side-label">一般AI出力</span>
-          <div class="ai-prompt">発電機の据付手順を書いて</div>
-          <div class="ai-result">
-            <span class="ai-result-tag bad">簡略すぎる</span><br>
-            発電機を据付します。ボルトを締めます。
-          </div>
-        </div>
-        <div class="ai-side expert">
-          <span class="ai-side-label">専門知識 × AI</span>
-          <div class="ai-prompt">立軸発電機の回転子降下手順、軸継ぎ手アライメント確認、TIR許容値を含む据付プロトコルを作成する。</div>
-          <div class="ai-result-en">
-            <span class="ai-result-tag good">専門家文章</span><br>
-            Rotor shall be lowered in increments of approximately 10 mm. Alignment of coupling bolt holes shall be verified at each step. Runout shall not exceed 0.15 mm TIR at the turbine guide bearing.
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Case 4: 海外顧客メール -->
-    <div class="ai-case fade-in">
-      <div class="ai-case-header">
-        <div class="ai-case-num">CASE 04</div>
-        <div class="ai-case-title">海外顧客向け英文メール</div>
-      </div>
-      <div class="ai-pair">
-        <div class="ai-side general">
-          <span class="ai-side-label">一般AI出力</span>
-          <div class="ai-prompt">工期が遅れることをメールで伝えて</div>
-          <div class="ai-result">
-            <span class="ai-result-tag bad">プロ品質に欠ける</span><br>
-            Dear Customer, We have some delay. Sorry for the inconvenience.
-          </div>
-        </div>
-        <div class="ai-side expert">
-          <span class="ai-side-label">専門知識 × AI</span>
-          <div class="ai-prompt">ガイドベーン操作リングに寸法偏差が見つかり追加検査が必要。影響2営業日。欧州顧客向けに契約品質要件を踏まえた英文メールを作成。</div>
-          <div class="ai-result-en">
-            <span class="ai-result-tag good">国際プロジェクト対応</span><br>
-            During the assembly verification process, an unexpected dimensional deviation was identified on the operating ring interface. To ensure full compliance with contractual and quality requirements, additional inspection activities have been initiated. The current schedule impact is estimated to be two working days.
-          </div>
-        </div>
-      </div>
-    </div>
-
   </div>
   <p style="margin-top:2rem; font-size:.9rem; color:var(--text-sub); max-width:720px;" class="fade-in">
     上記の差は「プロンプト技術」ではなく<strong style="color:var(--accent2)">「業務知識の差」</strong>です。
     35年以上の技術者経験・水力発電設備・ISO9001・海外プロジェクト・技術翻訳の組み合わせが、
     単なる「AIライター」との違いを生み出します。
   </p>
+</section>
+
+<!-- ────────────────── PROFESSIONAL BACKGROUND ────────────────── -->
+<section id="background">
+  <div class="fade-in">
+    <p class="section-label">Professional Background</p>
+    <h2>実務経歴</h2>
+    <div class="section-divider"></div>
+  </div>
+  <p class="fade-in" style="color:var(--text-sub); max-width:680px; margin-bottom:2rem; line-height:1.8;">
+    35年以上にわたり、電気・通信・水力発電分野の品質保証・技術サポート、および日英技術翻訳に従事。フリーランスとしてのクライアントワーク受注は16年に及びます。
+  </p>
+  <div class="about-highlights fade-in">
+    <div class="highlight-card">
+      <div class="number">35年+</div>
+      <p>技術実務経験</p>
+    </div>
+    <div class="highlight-card">
+      <div class="number">ISO9001</div>
+      <p>QMSコンサル11年</p>
+    </div>
+    <div class="highlight-card">
+      <div class="number">110件</div>
+      <p>技術翻訳(2023-2026)</p>
+    </div>
+    <div class="highlight-card">
+      <div class="number">水力発電</div>
+      <p>海外プロジェクト</p>
+    </div>
+  </div>
+  <a href="files/translation-summary.pdf" class="trans-pdf-link fade-in" target="_blank" rel="noopener" style="margin-top:1.5rem;">
+    📄 詳しい翻訳実績を見る（PDF）
+  </a>
+</section>
+
+<!-- ────────────────── ABOUT ────────────────── -->
+<section id="about">
+  <div class="about-text fade-in" style="max-width:720px;">
+    <p class="section-label">About</p>
+    <h2>はじめまして。<br>tashida と申します。</h2>
+    <div class="section-divider"></div>
+    <p>35年以上の技術実務経験を持ち、現在はAIを活用した画像・Web/LP・PowerPoint・コンテンツ制作にも取り組んでいます。</p>
+    <p>水力発電、ISO9001、技術翻訳、海外プロジェクトなどの実務経験を背景に、AIだけに依存しない実務品質の成果物を目指しています。</p>
+  </div>
+</section>
+
+<!-- ────────────────── PHILOSOPHY ────────────────── -->
+<section id="philosophy">
+  <div class="philosophy-inner fade-in">
+    <p class="section-label">Philosophy</p>
+    <h2>仕事への想い</h2>
+    <div class="section-divider" style="margin: 0 auto 2rem;"></div>
+    <blockquote>
+      AIは目的ではなく、成果物をより良くするためのツールです。<br><br>
+      長年の実務経験とAIを組み合わせ、見た目だけでなく、実際の業務で使える成果物を制作します。
+    </blockquote>
+  </div>
 </section>
 
 <!-- ────────────────── CONTACT ────────────────── -->
@@ -1205,10 +1026,9 @@
     <h2>お気軽にご連絡ください</h2>
     <div class="section-divider" style="margin: 0 auto 2rem;"></div>
     <div class="fade-in" style="margin-bottom:2rem; display:flex; flex-direction:column; gap:.4rem; color:var(--text-sub); font-size:.95rem;">
-      <p>Need a custom template?</p>
-      <p>Need technical translation?</p>
-      <p>Need ISO9001 support?</p>
-      <p style="color:var(--text-main); font-weight:600;">Contact me.</p>
+      <p style="color:var(--text-main); font-weight:600;">AIを活用した制作について、お気軽にご相談ください。</p>
+      <p>AI画像制作 / Web・LP制作 / PowerPoint / コンテンツ制作</p>
+      <p>技術翻訳・ISO9001関連業務についても対応しています。</p>
     </div>
     <p>ご相談ベースでも構いません。<br>平日・土日ともに柔軟に対応可能で、メッセージは原則 24 時間以内にご返信いたします。</p>
     <form id="contact-form" class="contact-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" onsubmit="submitContactForm(event)" novalidate>
@@ -1248,13 +1068,13 @@
 <footer>
   <div style="display:flex; flex-direction:column; gap:.5rem;">
     <span class="footer-logo">tashida</span>
-    <p>AI業務支援 / PPT テンプレート設計 / ISO9001 コンサルティング / 水力発電 技術翻訳</p>
+    <p>AI画像制作 / Web・LP制作 / PowerPoint制作 / コンテンツ制作</p>
     <p style="font-size:.78rem; color:#4a6080;">© 2025 tashida. All rights reserved.</p>
   </div>
   <ul style="list-style:none; display:flex; flex-wrap:wrap; gap:1.2rem; font-size:.85rem;">
     <li><a href="#hero" style="color:var(--text-sub); text-decoration:none;">ホーム</a></li>
-    <li><a href="#services" style="color:var(--text-sub); text-decoration:none;">サービス</a></li>
-    <li><a href="#translation" style="color:var(--text-sub); text-decoration:none;">技術翻訳</a></li>
+    <li><a href="#works" style="color:var(--text-sub); text-decoration:none;">制作実績</a></li>
+    <li><a href="#skills" style="color:var(--text-sub); text-decoration:none;">スキル</a></li>
     <li><a href="#contact" style="color:var(--text-sub); text-decoration:none;">お問い合わせ</a></li>
   </ul>
   <div style="display:flex; gap:1rem;">
@@ -1328,4 +1148,5 @@
   sections.forEach(s => io.observe(s));
 </script>
 </body>
+
 </html>
